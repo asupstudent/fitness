@@ -17,6 +17,6 @@
 ### Итоговый код попадает в директорию `build`
 
 ПРОВЕРКА:<br>
-<img src="https://github.com/asupstudent/fitness-training/workflows/project-check/badge.svg?branch=main"><br>
+<img src="https://github.com/asupstudent/fitness/workflows/project-check/badge.svg?branch=main"><br>
 ДЕПЛОЙ:<br>
-<img src="https://github.com/asupstudent/fitness-training/workflows/deploy-to-github-pages/badge.svg?branch=main"><br>
+<img src="https://github.com/asupstudent/fitness/workflows/deploy-to-github-pages/badge.svg?branch=main"><br>
