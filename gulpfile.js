@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
+import {validateW3C, lintBem} from './gulp/validateMarkup.mjs';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
 import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
 import {compileMainMinScripts, compileMainScripts, compileVendorScripts} from './gulp/compileScripts.mjs';
@@ -42,5 +43,7 @@ const refresh = (done) => {
 const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
 const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
+const runValidateW3C = () => validateW3C();
+const runLintBem = () => lintBem();
 
-export { createWebp as webp, build, start, dev};
+export { createWebp as webp, build, start, dev, runValidateW3C, runLintBem};
