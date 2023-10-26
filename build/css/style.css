@@ -740,6 +740,7 @@ button,
 .logo {
   padding: 10px;
   width: 140px;
+  height: 46px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -747,6 +748,179 @@ button,
   display: block;
   margin-top: 50px;
   background-color: #1c3374;
+}
+@media (max-width: 1365px) {
+  .logo {
+    width: 131px;
+    height: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 122px;
+    height: 42px;
+  }
+}
+
+.header {
+  min-height: 730px;
+  background: -webkit-gradient(linear, left top, right top, from(#1c3477), color-stop(0.01%, #1c3477), color-stop(39.11%, #1a3578), color-stop(75.5%, #73184b), to(#b4022a));
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  color: #ffffff;
+}
+@media (max-width: 1365px) {
+  .header {
+    min-height: 574px;
+    background: -webkit-gradient(linear, left top, right top, from(#1c3477), color-stop(0.01%, #1c3477), color-stop(39.76%, #1a3578), color-stop(75.5%, #73184b), to(#b4022a));
+    background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.76%, #73184b 75.5%, #b4022a 100%);
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    min-height: 461px;
+  }
+}
+
+.header .container {
+  padding: 0 93px;
+}
+@media (max-width: 1365px) {
+  .header .container {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 767px) {
+  .header .container {
+    padding: 0 5px;
+  }
+}
+
+.header__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__main-nav {
+  margin-top: 23px;
+  margin-bottom: 17px;
+}
+@media (max-width: 1365px) {
+  .header__main-nav {
+    margin-top: 22px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .header__main-nav {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+
+.header__hero {
+  margin: 0 auto;
+}
+
+.hero {
+  max-width: 1160px;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-nav .main-nav__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 210px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 1023px) {
+  .main-nav .main-nav__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1365px) {
+  .main-nav .main-nav__contacts {
+    margin: 2px 2px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav .main-nav__contacts {
+    margin: 0;
+  }
+}
+.main-nav .main-nav__contacts-link {
+  position: relative;
+  display: block;
+  padding: 7px 10px 13px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+.main-nav .main-nav__contacts-link::before {
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  right: 10px;
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: #102654;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+@media (max-width: 1365px) {
+  .main-nav .main-nav__contacts-link {
+    font-size: 24px;
+    padding: 6px 9px 11px 14px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav .main-nav__contacts-link {
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+}
+.main-nav .main-nav__contacts-link:hover:not([disabled]), .main-nav .main-nav__contacts-link:focus:not([disabled]) {
+  color: #1c3374;
+}
+.main-nav .main-nav__contacts-link:active:not([disabled]) {
+  color: #102654;
+}
+.main-nav .main-nav__contacts-link:active:not([disabled])::before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.main-nav .main-nav__contacts-link[disabled] {
+  color: #f8f9fc;
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
 }
 
 /* @mixin hover-focus {

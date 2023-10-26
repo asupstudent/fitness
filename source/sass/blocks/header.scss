@@ -1,0 +1,50 @@
+.header {
+  min-height: 730px;
+  background: $gradient-hero-desktop;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    min-height: 574px;
+    background: $gradient-hero-tablet-mobile;
+  }
+
+  @include vp-767 {
+    min-height: 461px;
+  }
+}
+
+.header .container {
+  padding: 0 93px;
+
+  @include vp-1365 {
+    padding: 0 35px;
+  }
+
+  @include vp-767 {
+    padding: 0 5px;
+  }
+}
+
+.header__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__main-nav {
+  margin-top: 23px;
+  margin-bottom: 17px;
+
+  @include vp-1365 {
+    margin-top: 22px;
+    margin-bottom: 16px;
+  }
+
+  @include vp-767 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+
+.header__hero {
+  margin: 0 auto;
+}
