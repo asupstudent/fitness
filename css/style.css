@@ -614,14 +614,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -685,7 +677,7 @@ button,
 }
 
 .btn--red {
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 
 .btn:disabled {
@@ -1305,6 +1297,19 @@ button,
 
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.logo {
+  padding: 10px;
+  width: 140px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.logo--sitemap {
+  display: block;
+  margin-top: 50px;
+  background-color: #1c3374;
 }
 
 /* @mixin hover-focus {
