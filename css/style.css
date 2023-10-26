@@ -664,29 +664,38 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
+  border: 2px solid #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
-.btn--red {
-  background-color: #ed0233;
+.btn:hover:not([disabled]),
+.btn:focus:not([disabled]) {
+  background-color: #ffffff;
+  color: #103aae;
 }
 
-.btn:disabled {
+.btn:active:not([disabled]) {
+  color: #102654;
+  background-color: #ffffff;
+}
+
+.btn[disabled] {
   opacity: 0.5;
   pointer-events: none;
-}
-
-.btn.focus-visible:focus {
-  opacity: 0.8;
+  cursor: default;
 }
 
 .modal {
@@ -1442,10 +1451,6 @@ button,
 }
 
 @media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.2);
   }
