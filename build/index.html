@@ -19,13 +19,47 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <a class="btn" href="#">Купить абонемент</a>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <nav class="header__main-nav main-nav">
+              <a class="main-nav__logo logo" href="#">
+                <img src="img/content/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
+              </a>
+              <ul class="main-nav__contacts">
+                <li class="main-nav__contacts-item">
+                  <a class="main-nav__contacts-link" href="tel:+78005555555">8-800-555-55-55</a>
+                </li>
+              </ul>
+            </nav>
+            <section class="header__hero hero">
+              <div class="hero__wrapper">
+                <p class="hero__city">Омск</p>
+                <h1 class="hero__title">Фитнес центр</h1>
+                <ul class="hero__services-list">
+                  <li class="hero__services-list-item">Тренажёрный&nbsp;зал</li>
+                  <li class="hero__services-list-item">Групповые&nbsp;занятия</li>
+                  <li class="hero__services-list-item">Кардио-зона</li>
+                </ul>
+                <a class="btn" href="#membership">Купить абонемент</a>
+              </div>
+              <div class="hero__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.webp 1x, ./img/content/hero/hero-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1366px)" width="500" height="556" srcset="./img/content/hero/hero-desktop@1x.webp 1x, ./img/content/hero/hero-desktop@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.jpg 1x, ./img/content/hero/hero-tablet@2x.jpg 2x">
+                  <source type="image/jpeg" media="(min-width: 1366px)" width="500" height="556" srcset="./img/content/hero/hero-desktop@1x.jpg 1x, ./img/content/hero/hero-desktop@2x.jpg 2x">
+                  <img src="./img/content/hero/hero-desktop@1x.jpg" width="500" height="556" srcset="./img/content/hero/hero-desktop@2x.jpg 2x" alt="Тренер-супермен.">
+                </picture>
+              </div>
+            </section>
+          </div>
+        </div>
       </header>
       <main>
 
       </main>
-      <footer>
+      <footer class="footer">
 
       </footer>
     </div>
