@@ -599,8 +599,10 @@ button,
   pointer-events: none;
   cursor: default;
 }
-.btn--hero {
-  padding: 20px;
+@media (max-width: 1365px) {
+  .btn--hero {
+    padding: 20px;
+  }
 }
 
 .custom-input,
@@ -780,6 +782,11 @@ button,
 }
 @media (max-width: 767px) {
   .header {
+    min-height: 350px;
+  }
+}
+@media (max-width: 420px) {
+  .header {
     min-height: 461px;
   }
 }
@@ -839,6 +846,12 @@ button,
     gap: 30px;
   }
 }
+@media (max-width: 767px) {
+  .hero {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 
 .hero__wrapper {
   display: -ms-grid;
@@ -868,6 +881,17 @@ button,
     padding-top: 32px;
   }
 }
+@media (max-width: 767px) {
+  .hero__wrapper {
+    max-width: 738px;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    justify-items: end;
+    -ms-grid-columns: 39% 61%;
+    grid-template-columns: 39% 61%;
+    padding-top: 34px;
+  }
+}
 
 .hero__image {
   max-width: 500px;
@@ -875,6 +899,11 @@ button,
 @media (max-width: 1365px) {
   .hero__image {
     max-width: 324px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__image {
+    display: none;
   }
 }
 
@@ -895,6 +924,13 @@ button,
   .hero__city {
     font-size: 42px;
     letter-spacing: 1.26px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__city {
+    max-width: 290px;
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -919,6 +955,16 @@ button,
     letter-spacing: 0;
   }
 }
+@media (max-width: 767px) {
+  .hero__title {
+    max-width: 310px;
+    font-size: 62px;
+    letter-spacing: 1.86px;
+    padding-top: 14px;
+    padding-bottom: 59px;
+    line-height: 1.13;
+  }
+}
 
 .hero__services-list {
   -ms-grid-row: 3;
@@ -937,6 +983,19 @@ button,
     margin-top: 14px;
   }
 }
+@media (max-width: 767px) {
+  .hero__services-list {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .hero__services-list {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
 
 .hero__btn {
   -ms-grid-row: 5;
@@ -947,6 +1006,13 @@ button,
 @media (max-width: 1365px) {
   .hero__btn {
     margin-left: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__btn {
+    width: 100%;
+    grid-column: 1/-1;
+    margin: 0;
   }
 }
 

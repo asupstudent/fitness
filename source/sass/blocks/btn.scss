@@ -30,6 +30,8 @@
   }
 
   &--hero {
-    padding: 20px;
+    @include vp-1365 {
+      padding: 20px;
+    }
   }
 }

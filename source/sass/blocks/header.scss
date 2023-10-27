@@ -9,6 +9,10 @@
   }
 
   @include vp-767 {
+    min-height: 350px;
+  }
+
+  @media (max-width: 420px) {
     min-height: 461px;
   }
 }
