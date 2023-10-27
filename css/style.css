@@ -698,6 +698,10 @@ button,
   cursor: default;
 }
 
+.btn--hero {
+  padding: 20px;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -850,6 +854,84 @@ button,
 
 .hero {
   max-width: 1160px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.2% 60.8%;
+  grid-template-columns: 33.2% 60.8%;
+  gap: 70px;
+}
+
+.hero__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 29.2% 0 70.8%;
+  grid-template-columns: 29.2% 70.8%;
+  -ms-grid-rows: auto 0 1fr 0 auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: ".             city" "services-list title" ".             button";
+  gap: 0;
+  -ms-grid-column-align: end;
+  justify-self: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  text-align: end;
+  max-width: 385px;
+  padding-bottom: 62px;
+  padding-top: 62px;
+}
+
+.hero__image {
+  max-width: 500px;
+}
+
+.hero__city {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: city;
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.62px;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: title;
+  padding: 0 0 50px 0;
+  margin: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 1.19;
+  text-transform: uppercase;
+  letter-spacing: 4.6px;
+  word-wrap: break-word;
+}
+
+.hero__services-list {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: services-list;
+  padding: 0;
+  margin: 12px 0 0 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.5;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.hero__btn {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: button;
+  margin-left: 42px;
 }
 
 .main-nav {
@@ -984,7 +1066,44 @@ button,
 
   .header__main-nav {
     margin-top: 22px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+  }
+
+  .hero {
+    -ms-grid-columns: 47.8% 47.9%;
+    grid-template-columns: 47.8% 47.9%;
+    gap: 30px;
+  }
+
+  .hero__wrapper {
+    max-width: 324px;
+    -ms-grid-columns: 35% 65%;
+    grid-template-columns: 35% 65%;
+    padding-bottom: 31px;
+    padding-top: 32px;
+  }
+
+  .hero__image {
+    max-width: 324px;
+  }
+
+  .hero__city {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  .hero__title {
+    font-size: 72px;
+    padding-bottom: 49px;
+    letter-spacing: 0;
+  }
+
+  .hero__services-list {
+    margin-top: 14px;
+  }
+
+  .hero__btn {
+    margin-left: 26px;
   }
 
   .main-nav .main-nav__contacts {
