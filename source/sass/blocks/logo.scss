@@ -5,7 +5,7 @@
   flex-shrink: 0;
 
   &--sitemap {
-    display: block;
+    display: flex;
     margin-top: 50px;
     background-color: $color-resolution-blue;
   }
