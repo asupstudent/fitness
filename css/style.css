@@ -818,7 +818,9 @@ button,
 }
 
 .logo--sitemap {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 50px;
   background-color: #1c3374;
 }
