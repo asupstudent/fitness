@@ -1,3 +1,102 @@
 .hero {
   max-width: 1160px;
+  display: grid;
+  grid-template-columns: 33.2% 60.8%;
+  gap: 70px;
+
+  @include vp-1365 {
+    grid-template-columns: 47.8% 47.9%;
+    gap: 30px;
+  }
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 29.2% 70.8%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    ".             city"
+    "services-list title"
+    ".             button";
+  gap: 0;
+  justify-self: end;
+  align-items: end;
+  text-align: end;
+  max-width: 385px;
+  padding-bottom: 62px;
+  padding-top: 62px;
+
+  @include vp-1365 {
+    max-width: 324px;
+    grid-template-columns: 35% 65%;
+    padding-bottom: 31px;
+    padding-top: 32px;
+  }
+}
+
+.hero__image {
+  max-width: 500px;
+
+  @include vp-1365 {
+    max-width: 324px;
+  }
+}
+
+.hero__city {
+  grid-area: city;
+  margin: 0;
+  padding: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.62px;
+  text-transform: uppercase;
+
+  @include vp-1365 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+}
+
+.hero__title {
+  grid-area: title;
+  padding: 0 0 50px 0;
+  margin: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 1.19;
+  text-transform: uppercase;
+  letter-spacing: 4.6px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 72px;
+    padding-bottom: 49px;
+    letter-spacing: 0;
+  }
+}
+
+.hero__services-list {
+  grid-area: services-list;
+  padding: 0;
+  margin: 12px 0 0 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.5;
+  align-self: center;
+
+  @include vp-1365 {
+    margin-top: 14px;
+  }
+}
+
+.hero__btn {
+  grid-area: button;
+  margin-left: 42px;
+
+  @include vp-1365 {
+    margin-left: 26px;
+  }
 }
