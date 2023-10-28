@@ -897,16 +897,24 @@ button,
 
 .hero__image {
   max-width: 500px;
+  max-height: 524px;
 }
 @media (max-width: 1365px) {
   .hero__image {
     max-width: 324px;
+    max-height: 390px;
   }
 }
 @media (max-width: 767px) {
   .hero__image {
     display: none;
   }
+}
+
+.hero__image img {
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero__city {
