@@ -1,0 +1,59 @@
+.about__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: flex;
+  gap: 145px;
+}
+
+.about__text-block {
+  max-width: 355px;
+}
+
+.about__title {
+  margin: -5px 0 23px 0;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.62px;
+}
+
+.about__feature {
+  margin: 0 0 89px 0;
+  font-size: 22px;
+  letter-spacing: -0.1px;
+}
+
+.about__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.about__description {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+}
+
+.about__media-block {
+  max-width: 660px;
+  width: 100%;
+  position: relative;
+  min-height: 516px;
+}
+
+.about__image {
+  width: 100%;
+  background-color: $color-sapphire-20;
+}
+
+.about__video {
+  position: absolute;
+  bottom: 0;
+  left: -63px;
+  width: 364px;
+  height: 228px;
+  background-color: $color-sapphire-50;
+}
