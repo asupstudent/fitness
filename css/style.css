@@ -881,6 +881,13 @@ button,
 
 .hero__image {
   max-width: 500px;
+  max-height: 524px;
+}
+
+.hero__image img {
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero__city {
@@ -1087,6 +1094,7 @@ button,
 
   .hero__image {
     max-width: 324px;
+    max-height: 390px;
   }
 
   .hero__city {

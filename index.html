@@ -57,7 +57,47 @@
         </div>
       </header>
       <main>
-
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__text-block">
+              <h2 class="about__title">Тренажерный зал</h2>
+              <p class="about__feature">Просторный зал площадью 900 кв/м</p>
+              <div class="about__description-wrapper">
+                <div class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</div>
+                <div class="about__description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</div>
+              </div>
+            </div>
+            <div class="about__media-block">
+              <div class="about__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="320" height="313" srcset="./img/content/about/gym-mobile@1x.webp 1x, ./img/content/about/gym-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="678" height="345" srcset="./img/content/about/gym-tablet@1x.webp 1x, ./img/content/about/gym-tablet@2x.webp 2x">
+                  <source type="image/webp" width="660" height="401" srcset="./img/content/about/gym-desktop@1x.webp 1x, ./img/content/about/gym-desktop@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="320" height="313" srcset="./img/content/about/gym-mobile@1x.jpg 1x, ./img/content/about/gym-mobile@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="678" height="345" srcset="./img/content/about/gym-tablet@1x.jpg 1x, ./img/content/about/gym-tablet@2x.jpg 2x">
+                  <img src="./img/content/about/gym-desktop@1x.jpg" width="660" height="401" srcset="./img/content/about/gym-desktop@2x.jpg 2x" alt="Тренажерный зал.">
+                </picture>
+              </div>
+              <div class="about__video">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="320" height="167" srcset="./img/content/about/cover-mobile@1x.webp 1x, ./img/content/about/cover-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1365px)" width="266" height="167" srcset="./img/content/about/cover-tablet@1x.webp 1x, ./img/content/about/cover-tablet@2x.webp 2x">
+                  <source type="image/webp" width="364" height="228" srcset="./img/content/about/cover-desktop@1x.webp 1x, ./img/content/about/cover-desktop@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="320" height="167" srcset="./img/content/about/cover-mobile@1x.jpg 1x, ./img/content/about/cover-mobile@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="266" height="167" srcset="./img/content/about/cover-tablet@1x.jpg 1x, ./img/content/about/cover-tablet@2x.jpg 2x">
+                  <img src="./img/content/about/cover-desktop@1x.jpg" width="364" height="228" srcset="./img/content/about/cover-desktop@2x.jpg 2x" alt="Постер видео тренажерного зала.">
+                </picture>
+                <button class="about__play-button" type="button" aria-label="Воспроизвести видео.">
+                  <svg width="17" height="17" viewBox="0 0 17 17" role="img">
+                    <use href="img/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </main>
       <footer class="footer">
 
