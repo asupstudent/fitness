@@ -1200,6 +1200,10 @@ button,
   background: rgba(20, 54, 122, 0.5);
 }
 
+.about__video img {
+  max-height: 100%;
+}
+
 .about__video-player {
   width: 100%;
   height: 100%;
