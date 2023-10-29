@@ -56,4 +56,120 @@
   width: 364px;
   height: 228px;
   background-color: $color-sapphire-50;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $color-dark-cerulean-50;
+  }
+}
+
+.about__video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.about__play-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+
+  &::before {
+    background: $gradient-button;
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 72px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    inset: 0;
+    transform: translate(-14px, -14px);
+    opacity: 0.2;
+    background: $color-torch-red-first;
+    border: 2px solid transparent;
+    mask: $gradient-button padding-box, $gradient-button;
+    mask-composite: exclude;
+  }
+
+  &:hover:not([disabled])::before,
+  &:focus:not([disabled])::before {
+    background: $color-default-white;
+  }
+
+  &:hover:not([disabled])::after,
+  &:focus:not([disabled])::after {
+    opacity: 1;
+    border: solid 2px $color-sapphire;
+  }
+
+  &:active:not([disabled])::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58px;
+    height: 58px;
+    background: $color-default-white;
+  }
+
+  &:active:not([disabled])::after {
+    opacity: 1;
+    border: solid 2px $color-sapphire;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg,
+  &:disabled svg {
+    color: $color-sapphire;
+  }
+
+  &[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &[disabled]::before {
+    background: $color-default-white;
+  }
+
+  &[disabled]::after {
+    border: 2px solid $color-sapphire;
+    opacity: 1;
+    mask: none;
+    background: transparent;
+  }
+}
+
+.about__play-button svg {
+  position: absolute;
+  color: $color-default-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-4px, -8px);
+  z-index: 3;
 }
