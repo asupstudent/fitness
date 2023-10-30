@@ -1022,7 +1022,7 @@ button,
   max-width: 355px;
 }
 
-.about__title {
+.about__text-block h2 {
   margin: -5px 0 23px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -1031,7 +1031,7 @@ button,
   letter-spacing: 1.62px;
 }
 
-.about__feature {
+.about__text-block p {
   margin: 0 0 89px 0;
   font-size: 22px;
   letter-spacing: -0.1px;
@@ -1048,10 +1048,11 @@ button,
   gap: 8px 0;
 }
 
-.about__description {
+.about__description-wrapper p {
   margin: 0;
   font-weight: 300;
   letter-spacing: -0.1px;
+  font-size: 16px;
 }
 
 .about__media-block {
@@ -1343,13 +1344,13 @@ button,
     text-align: center;
   }
 
-  .about__title {
+  .about__text-block h2 {
     margin-bottom: 19px;
     font-size: 42px;
     letter-spacing: 1.26px;
   }
 
-  .about__feature {
+  .about__text-block p {
     font-size: 20px;
     line-height: 1;
     margin-left: -5px;
@@ -1360,7 +1361,11 @@ button,
     margin: 0 auto;
   }
 
-  .about__description:last-child {
+  .about__description-wrapper p {
+    line-height: 1.5;
+  }
+
+  .about__description-wrapper p:last-child {
     display: none;
   }
 
@@ -1523,13 +1528,13 @@ button,
     text-align: left;
   }
 
-  .about__title {
+  .about__text-block h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 12px;
   }
 
-  .about__feature {
+  .about__text-block p {
     margin-left: 0;
     margin-bottom: 38px;
     font-size: 18px;
@@ -1541,7 +1546,7 @@ button,
     margin: 0;
   }
 
-  .about__description {
+  .about__description-wrapper p {
     font-size: 14px;
     line-height: 1.57;
     letter-spacing: 0;
