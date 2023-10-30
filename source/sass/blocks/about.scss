@@ -160,14 +160,16 @@
   height: 228px;
   background-color: $color-sapphire-50;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: $color-dark-cerulean-50;
+  &--overlay {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: $color-dark-cerulean-50;
+    }
   }
 
   @include vp-1365 {

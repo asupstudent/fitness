@@ -1,19 +1,15 @@
 .header {
-  min-height: 730px;
   background: $gradient-hero-desktop;
   color: $color-default-white;
+  padding-bottom: 120px;
 
   @include vp-1365 {
-    min-height: 574px;
     background: $gradient-hero-tablet-mobile;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
-    min-height: 350px;
-  }
-
-  @media (max-width: 420px) {
-    min-height: 461px;
+    padding-bottom: 39px;
   }
 }
 
