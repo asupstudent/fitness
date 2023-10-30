@@ -34,7 +34,7 @@
   }
 }
 
-.about__title {
+.about__text-block h2 {
   margin: -5px 0 23px 0;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -55,7 +55,7 @@
   }
 }
 
-.about__feature {
+.about__text-block p {
   margin: 0 0 89px 0;
   font-size: 22px;
   letter-spacing: -0.1px;
@@ -98,12 +98,15 @@
   }
 }
 
-.about__description {
+.about__description-wrapper p {
   margin: 0;
   font-weight: 300;
   letter-spacing: -0.1px;
+  font-size: 16px;
 
   @include vp-1365 {
+    line-height: 1.5;
+
     &:last-child {
       display: none;
     }
