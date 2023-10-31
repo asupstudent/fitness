@@ -1,0 +1,46 @@
+.price {
+  // height: 851px; /*Временно*/
+  position: relative;
+  background-color: $color-ghost-white;
+  overflow-x: hidden;
+
+  @include vp-1365 {
+    // height: 1749px; /*Временно*/
+  }
+}
+
+.price__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url("../img/content/membership/pancakes-desktop@1x.png");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  //   width: 287px;
+  //   height: 413px;
+  //   right: 0;
+  //   bottom: -69px;
+  // }
+
+  // @include vp-1365 {
+  //   &::before {
+  //     background-image: url("../img/content/membership/pancakes-tablet@1x.png");
+  //     width: 326px;
+  //     height: 354px;
+  //     bottom: -80px;
+  //   }
+  // }
+}
+
+.price__image {
+  position: absolute;
+  width: 470px;
+  height: 494px;
+  right: -183px;
+  bottom: -151px;
+}
