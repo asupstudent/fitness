@@ -1207,11 +1207,28 @@ button,
   z-index: 3;
 }
 
-.membership {
+.price {
   position: relative;
+  background-color: #f8f9fc;
+  overflow-x: hidden;
 }
 
-.membership-item {
+.price__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.price__image {
+  position: absolute;
+  width: 470px;
+  height: 494px;
+  right: -183px;
+  bottom: -151px;
+}
+
+.price-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
