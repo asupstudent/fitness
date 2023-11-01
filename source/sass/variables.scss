@@ -30,11 +30,12 @@ $color-crimson-20                   : rgba(209, 10, 66, 0.2);
 
 $gradient-hero-desktop: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 $gradient-hero-tablet-mobile: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.76%, #73184b 75.5%, #b4022a 100%);
-$gradient-button: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-$gradient-border-tickets: 0;
-$gradient-digit-900: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
-$gradient-digit-70-350: linear-gradient(142deg, #d10a42 0%, #0041ca 88.2%);
-$gradient-digit-5-plus: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
+$gradient-button: linear-gradient(97deg, $color-torch-red-first 17.6%, #003eb7 95.31%);
+//Нужно вычилсить как-то фигма не дает
+$gradient-border-tickets: linear-gradient(97deg, $color-torch-red-first 17.6%, #003eb7 95.31%);
+$gradient-digit-900: linear-gradient(128deg, $color-crimson 0%, #0041ca 45.58%);
+$gradient-digit-70-350: linear-gradient(142deg, $color-crimson 0%, #0041ca 88.2%);
+$gradient-digit-5-plus: linear-gradient(143deg, $color-crimson 0%, #0041ca 87.33%);
 $gradient-border-event: 0;
 
 // Typography

@@ -34,4 +34,22 @@
       padding: 20px;
     }
   }
+
+  &--price {
+    padding: 25px;
+    border: none;
+    outline: 2px solid $color-sapphire;
+    color: $color-sapphire;
+    width: 100%;
+
+    &:active:not([disabled]) {
+      opacity: 0.7;
+    }
+
+    &[disabled] {
+      opacity: 0.3;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
 }
