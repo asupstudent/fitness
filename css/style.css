@@ -698,6 +698,24 @@ button,
   cursor: default;
 }
 
+.btn--price {
+  padding: 25px;
+  border: none;
+  outline: 2px solid #102654;
+  color: #102654;
+  width: 100%;
+}
+
+.btn--price:active:not([disabled]) {
+  opacity: 0.7;
+}
+
+.btn--price[disabled] {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1222,11 +1240,16 @@ button,
 
 .price__image {
   position: absolute;
-  width: 470px;
-  height: 494px;
-  right: -183px;
-  bottom: -151px;
-  z-index: 2;
+  width: 380px;
+  height: 330px;
+  right: -138px;
+  bottom: 0;
+}
+
+.price__spacer {
+  width: 100%;
+  min-height: 70px;
+  background-color: #ffffff;
 }
 
 .price__title {
@@ -1250,7 +1273,7 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0 auto 37px;
+  margin: 0 auto 33px;
   padding: 0;
   list-style: none;
 }
@@ -1285,7 +1308,7 @@ button,
   right: 0;
   width: calc(100% - 39px);
   height: 2px;
-  background-color: #ed0233;
+  background-color: #d10a42;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -1320,7 +1343,7 @@ button,
 }
 
 .price__control.is-active::before {
-  background: #ed0233;
+  background-color: #d10a42;
 }
 
 .price__list {
@@ -1338,6 +1361,94 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 360px;
+  padding: 58px 20px 60px;
+  border: 7px solid #ffffff;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.price-item:hover,
+.price-item:focus {
+  padding: 58px 20px;
+  -o-border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-slice: 1;
+}
+
+.price-item:hover .btn--price:not([disabled]),
+.price-item:focus .btn--price:not([disabled]) {
+  color: #ffffff;
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  outline-color: transparent;
+}
+
+.price-item:hover .price-item__price,
+.price-item:focus .price-item__price {
+  margin-bottom: 34px;
+}
+
+.price-item:hover .price-item__button,
+.price-item:focus .price-item__button {
+  max-width: 205px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.price-item__title {
+  margin: 0 0 4px 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.price-item__description {
+  margin: 0 0 69px 0;
+  font-weight: 300;
+}
+
+.price-item__price {
+  position: relative;
+  margin: 0 0 36px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #103aae;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.price-item__price::before {
+  position: absolute;
+  content: attr(data-price);
+  top: 20px;
+  left: -19px;
+  color: #e8e8e8;
+  opacity: 0.48;
+  font-size: 100px;
+  z-index: -1;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  letter-spacing: -0.3px;
+}
+
+.price-item__description span {
+  position: relative;
+  top: 0;
+  right: 4px;
+  color: #102654;
+}
+
+.price-item__button {
+  max-width: 201px;
 }
 
 [data-tabs=parent] {
@@ -1716,6 +1827,46 @@ button,
   .price__wrapper {
     padding: 101px 0 99px 0;
   }
+
+  .price__title {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 19px;
+  }
+
+  .price__controls-list {
+    gap: 36px;
+    margin-bottom: 45px;
+  }
+
+  .price__controls-list::before {
+    bottom: -1px;
+    width: calc(100% - 20px);
+    left: 10px;
+  }
+
+  .price__control {
+    padding: 18px 10px 12px;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .price__control::before {
+    bottom: -1px;
+    width: calc(100% - 19px);
+    left: 10px;
+  }
+
+  .price__list {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .price-item {
+    width: 440px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1908,6 +2059,15 @@ button,
 
   .price__wrapper {
     padding: 64px 0 70px;
+  }
+
+  .price__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+
+  .price__control {
+    font-size: 16px;
   }
 }
 
