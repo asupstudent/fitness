@@ -1377,7 +1377,6 @@ button,
 
 .price-item:hover,
 .price-item:focus {
-  padding: 58px 20px;
   -o-border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
@@ -1388,18 +1387,6 @@ button,
   color: #ffffff;
   background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   outline-color: transparent;
-}
-
-.price-item:hover .price-item__price,
-.price-item:focus .price-item__price {
-  margin-bottom: 34px;
-}
-
-.price-item:hover .price-item__button,
-.price-item:focus .price-item__button {
-  max-width: 205px;
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 
 .price-item__title {
@@ -1665,6 +1652,10 @@ button,
     padding: 20px;
   }
 
+  .btn--price {
+    padding: 20px;
+  }
+
   .logo {
     width: 131px;
     height: 44px;
@@ -1828,6 +1819,16 @@ button,
     padding: 101px 0 99px 0;
   }
 
+  .price__image {
+    width: 326px;
+    height: 284px;
+    right: -38px;
+  }
+
+  .price__spacer {
+    min-height: 81px;
+  }
+
   .price__title {
     font-size: 42px;
     letter-spacing: 1.26px;
@@ -1866,6 +1867,22 @@ button,
 
   .price-item {
     width: 440px;
+    padding-top: 60px;
+  }
+
+  .price-item__title {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .price-item__description {
+    line-height: 1.5;
+    margin-bottom: 75px;
+  }
+
+  .price-item__price {
+    margin-bottom: 25px;
   }
 }
 
@@ -2057,17 +2074,88 @@ button,
     top: 4px;
   }
 
+  .price .container {
+    padding: 0;
+  }
+
   .price__wrapper {
-    padding: 64px 0 70px;
+    padding: 74px 0 70px;
+  }
+
+  .price__image {
+    display: none;
+  }
+
+  .price__spacer {
+    display: none;
   }
 
   .price__title {
     font-size: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 2px;
+  }
+
+  .price__controls-list {
+    gap: 14px;
+    margin-bottom: 39px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .price__controls-list::before {
+    bottom: -5px;
+    width: calc(100% - 30px);
+    left: 15px;
   }
 
   .price__control {
+    padding: 20px 15px 12px;
     font-size: 16px;
+  }
+
+  .price__control::before {
+    bottom: -5px;
+    width: calc(100% - 30px);
+    left: 13px;
+  }
+
+  .price__list {
+    padding: 0 15px;
+    gap: 34.5px;
+  }
+
+  .price-item {
+    width: 290px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .price-item__title {
+    font-size: 22px;
+  }
+
+  .price-item__description {
+    font-size: 14px;
+    margin-bottom: 64px;
+    line-height: 1.57;
+  }
+
+  .price-item__price {
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+
+  .price-item__price::before {
+    font-size: 80px;
+    top: 16px;
+    left: -14px;
+  }
+
+  .price-item__price svg {
+    width: 24px;
+    height: 33px;
   }
 }
 
