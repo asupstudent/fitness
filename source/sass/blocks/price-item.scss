@@ -10,7 +10,7 @@
 
   &:hover,
   &:focus {
-    padding: 58px 20px;
+    // padding: 58px 20px;
     border-image: $gradient-border-tickets;
     border-image-slice: 1;
 
@@ -20,19 +20,26 @@
       outline-color: transparent;
     }
 
-    .price-item__price {
-      margin-bottom: 34px;
-    }
+    // .price-item__price {
+    //   margin-bottom: 34px;
+    // }
 
-    .price-item__button {
-      max-width: 205px;
-      padding-top: 27px;
-      padding-bottom: 27px;
-    }
+    // .price-item__button {
+    //   max-width: 205px;
+    //   padding-top: 27px;
+    //   padding-bottom: 27px;
+    // }
   }
 
   @include vp-1365 {
     width: 440px;
+    padding-top: 60px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
@@ -41,11 +48,32 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+  }
 }
 
 .price-item__description {
   margin: 0 0 69px 0;
   font-weight: 300;
+
+  @include vp-1365 {
+    line-height: 1.5;
+    margin-bottom: 75px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    margin-bottom: 64px;
+    line-height: 1.57;
+  }
 }
 
 .price-item__price {
@@ -69,6 +97,28 @@
     z-index: -1;
     transform: translateY(-50%);
     letter-spacing: -0.3px;
+  }
+
+  @include vp-1365 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+    font-size: 48px;
+
+    &::before {
+      font-size: 80px;
+      top: 16px;
+      left: -14px;
+    }
+  }
+}
+
+.price-item__price svg {
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
   }
 }
 
