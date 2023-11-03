@@ -17,6 +17,7 @@ $color-resolution-blue-20           : rgba(28, 51, 116, 0.2);
 $color-black-russian                : #030a1a;
 $color-persian-blue                 : #2e35ac;
 $color-egyptian-blue                : #103aae;
+$color-smalt                        : #00359f;
 $color-light-slate-grey             : #74819c;
 $color-whisper                      : #e8e8e8;
 $color-torch-red-first              : #ed0233;
@@ -33,8 +34,7 @@ $color-spindle                      : #b6bdcc;
 $gradient-hero-desktop: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 $gradient-hero-tablet-mobile: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.76%, #73184b 75.5%, #b4022a 100%);
 $gradient-button: linear-gradient(97deg, $color-torch-red-first 17.6%, #003eb7 95.31%);
-//Нужно вычилсить как-то фигма не дает
-$gradient-border-tickets: linear-gradient(97deg, $color-torch-red-first 17.6%, #003eb7 95.31%);
+$gradient-border-tickets: linear-gradient(to bottom right, $color-crimson, $color-smalt);
 $gradient-digit-900: linear-gradient(128deg, $color-crimson 0%, #0041ca 45.58%);
 $gradient-digit-70-350: linear-gradient(142deg, $color-crimson 0%, #0041ca 88.2%);
 $gradient-digit-5-plus: linear-gradient(143deg, $color-crimson 0%, #0041ca 87.33%);

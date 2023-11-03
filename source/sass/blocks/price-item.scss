@@ -10,36 +10,54 @@
 
   &:hover,
   &:focus {
-    // padding: 58px 20px;
     border-image: $gradient-border-tickets;
     border-image-slice: 1;
+    padding-bottom: 58px;
 
     & .btn--price:not([disabled]) {
       color: $color-default-white;
       background: $gradient-button;
       outline-color: transparent;
+      max-width: 205px;
+      padding-top: 27px;
+      padding-bottom: 27px;
     }
 
-    // .price-item__price {
-    //   margin-bottom: 34px;
-    // }
-
-    // .price-item__button {
-    //   max-width: 205px;
-    //   padding-top: 27px;
-    //   padding-bottom: 27px;
-    // }
+    & .price-item__price {
+      margin-bottom: 34px;
+    }
   }
 
   @include vp-1365 {
     width: 440px;
     padding-top: 60px;
+
+    &:hover,
+    &:focus {
+      & .price-item__price {
+        margin-bottom: 23px;
+      }
+
+      & .btn--price:not([disabled]) {
+        padding-top: 22px;
+        padding-bottom: 22px;
+      }
+    }
   }
 
   @include vp-767 {
     width: 290px;
     padding-top: 45px;
     padding-bottom: 45px;
+
+    &:hover,
+    &:focus {
+      padding-bottom: 43px;
+
+      & .price-item__price {
+        margin-bottom: 22px;
+      }
+    }
   }
 }
 

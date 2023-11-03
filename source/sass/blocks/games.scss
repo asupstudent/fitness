@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding: 50px 0 107px 0;
+  padding: 51px 0 107px 0;
 
   @include vp-1365 {
     max-width: 678px;
@@ -31,7 +31,7 @@
   @include vp-767 {
     width: 100%;
     max-width: 100%;
-    padding: 41px 39px 39px;
+    padding: 41px 40px 40px;
   }
 }
 
@@ -242,7 +242,7 @@
   }
 
   @include vp-767 {
-    margin-top: 19px;
+    margin-top: 20px;
   }
 }
 
