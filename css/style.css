@@ -2234,7 +2234,7 @@ button,
 
 .price__spacer {
   width: 100%;
-  min-height: 70px;
+  min-height: 69px;
   background-color: #ffffff;
 }
 
@@ -2363,9 +2363,11 @@ button,
 
 .price-item:hover,
 .price-item:focus {
-  -o-border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+  border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+  border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
+  padding-bottom: 58px;
 }
 
 .price-item:hover .btn--price:not([disabled]),
@@ -2373,6 +2375,14 @@ button,
   color: #ffffff;
   background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   outline-color: transparent;
+  max-width: 205px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.price-item:hover .price-item__price,
+.price-item:focus .price-item__price {
+  margin-bottom: 34px;
 }
 
 .price-item__title {
@@ -2433,7 +2443,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 50px 0 107px 0;
+  padding: 51px 0 107px 0;
 }
 
 .games__content-wrapper {
@@ -2677,7 +2687,7 @@ button,
 .jury-information {
   width: 100%;
   height: 100%;
-  padding: 51px 30px;
+  padding: 46px 30px;
   background-color: rgba(16, 38, 84, 0.89);
   overflow-y: scroll;
   -webkit-transform: scale(1.3);
@@ -2689,10 +2699,10 @@ button,
 }
 
 .jury-information .jury-information__name {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.5;
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
   text-align: center;
 }
 
@@ -2701,12 +2711,14 @@ button,
   line-height: 1.5;
   color: #b6bdcc;
   text-align: center;
+  font-weight: 300;
 }
 
 .jury-information .jury-information__achievement-list {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.57;
   list-style-type: disc;
+  padding-left: 35px;
 }
 
 .jury-information .jury-information__achievement-item {
@@ -2765,6 +2777,7 @@ button,
 
   .btn--price {
     padding: 20px;
+    font-weight: 400;
   }
 
   .btn--games {
@@ -2991,6 +3004,17 @@ button,
     padding-top: 60px;
   }
 
+  .price-item:hover .price-item__price,
+  .price-item:focus .price-item__price {
+    margin-bottom: 23px;
+  }
+
+  .price-item:hover .btn--price:not([disabled]),
+  .price-item:focus .btn--price:not([disabled]) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
   .price-item__title {
     font-size: 24px;
     line-height: 1;
@@ -3096,6 +3120,11 @@ button,
     max-height: 588px;
   }
 
+  .jury__item-title {
+    font-size: 20px;
+    bottom: 22px;
+  }
+
   .jury__button {
     top: 42.5%;
   }
@@ -3145,8 +3174,12 @@ button,
     padding: 0 15px;
   }
 
+  .btn--price {
+    font-weight: 700;
+  }
+
   .btn--games {
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     font-weight: 700;
   }
 
@@ -3363,6 +3396,16 @@ button,
     padding-bottom: 45px;
   }
 
+  .price-item:hover,
+  .price-item:focus {
+    padding-bottom: 43px;
+  }
+
+  .price-item:hover .price-item__price,
+  .price-item:focus .price-item__price {
+    margin-bottom: 22px;
+  }
+
   .price-item__title {
     font-size: 22px;
   }
@@ -3400,7 +3443,7 @@ button,
   .games__content-wrapper {
     width: 100%;
     max-width: 100%;
-    padding: 41px 39px 39px;
+    padding: 41px 40px 40px;
   }
 
   .games__main-content {
@@ -3462,7 +3505,7 @@ button,
   }
 
   .games__button {
-    margin-top: 19px;
+    margin-top: 20px;
   }
 
   .games__image-wrapper img {
@@ -3490,6 +3533,11 @@ button,
 
   .jury__item img {
     max-height: 548px;
+  }
+
+  .jury__item-title {
+    font-size: 22px;
+    bottom: 20px;
   }
 
   .jury__button {
@@ -3546,10 +3594,6 @@ button,
 
   .jury-information .jury-information__specialty {
     margin-right: 0;
-  }
-
-  .jury-information .jury-information__achievement-list {
-    padding-left: 35px;
   }
 }
 
