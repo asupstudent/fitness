@@ -1,0 +1,59 @@
+.jury-information {
+  width: 100%;
+  height: 100%;
+  padding: 51px 30px;
+  background-color: $color-sapphire-89;
+  overflow-y: scroll;
+  transform: scale(1.3);
+  opacity: 0;
+  transition: $trans-default;
+
+  @include vp-767 {
+    padding: 41px 15px;
+  }
+
+  .jury-information__name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+
+    @include vp-1365 {
+      margin-right: 10px;
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+  }
+
+  .jury-information__specialty {
+    margin: -3px 0 33px 0;
+    line-height: 1.5;
+    color: $color-spindle;
+    text-align: center;
+
+    @include vp-1365 {
+      margin-right: 12px;
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+  }
+
+  .jury-information__achievement-list {
+    font-size: 14px;
+    line-height: 1.5;
+    list-style-type: disc;
+
+    @include vp-767 {
+      padding-left: 35px;
+    }
+  }
+
+  .jury-information__achievement-item {
+    margin-bottom: 13px;
+  }
+}
