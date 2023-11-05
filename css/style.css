@@ -2782,7 +2782,7 @@ button,
 }
 
 .features__item:nth-child(2),
-.features__item:nth-child(5) {
+.features__item:last-child {
   padding: 0;
 }
 
@@ -2872,6 +2872,10 @@ button,
   padding-top: 7px;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.features__br {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -3806,6 +3810,105 @@ button,
 
   .jury-information .jury-information__specialty {
     margin-right: 0;
+  }
+
+  .features .container {
+    padding: 0;
+  }
+
+  .features__wrapper {
+    padding: 71px 0 69px;
+  }
+
+  .features__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 55px;
+    padding: 0 15px;
+  }
+
+  .features__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .features__item--decorated p {
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-size: 64px;
+  }
+
+  .features__item--decorated div {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .features__item--decorated h3 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+  }
+
+  .features__item--decorated {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 7px;
+    padding: 30px 46px 39px;
+  }
+
+  .features__item:not(.features__item--decorated) {
+    gap: 11px;
+    padding: 0 55px;
+    margin-left: 2px;
+  }
+
+  .features__item:not(.features__item--decorated):nth-child(2) .features__item-text p,
+  .features__item:not(.features__item--decorated):nth-child(4) .features__item-text p {
+    padding-top: 7px;
+  }
+
+  .features__item:not(.features__item--decorated):last-child {
+    margin-top: -5px;
+  }
+
+  .features__item {
+    max-width: 100%;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .features__item-title p {
+    font-size: 64px;
+  }
+
+  .features__item-title div {
+    line-height: 1.42;
+    margin-top: 0;
+  }
+
+  .features__item-text h3 {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .features__item-text p {
+    font-size: 14px;
+    line-height: 1.57;
+    padding-top: 13px;
+  }
+
+  .features__br {
+    display: block;
   }
 }
 
