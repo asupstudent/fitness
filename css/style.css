@@ -3554,6 +3554,46 @@ button,
   .features__item-text p {
     padding-top: 12px;
   }
+
+  .promo__wrapper {
+    padding: 101px 0 100px;
+  }
+
+  .promo__title {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 39px;
+  }
+
+  .promo__list {
+    gap: 30px;
+  }
+
+  .promo__item--primary h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .promo__item--primary span {
+    margin-bottom: 20px;
+  }
+
+  .promo__item--primary {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    -ms-grid-columns: 1fr auto;
+    grid-template-columns: 1fr auto;
+  }
+
+  .promo__item--secondary h3 {
+    font-size: 24px;
+  }
+
+  .promo__item-description {
+    padding-top: 45px;
+  }
 }
 
 @media (max-width: 1023px) {
