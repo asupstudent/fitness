@@ -6,6 +6,10 @@
   @include vp-1365 {
     padding: 101px 0 100px;
   }
+
+  @include vp-767 {
+    padding: 71px 0 70px;
+  }
 }
 
 .promo__title {
@@ -22,6 +26,12 @@
     letter-spacing: 1.26px;
     margin-bottom: 39px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 41px;
+  }
 }
 
 .promo__list {
@@ -34,6 +44,10 @@
 
   @include vp-1365 {
     gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -53,6 +67,11 @@
         font-size: 24px;
         margin-bottom: 5px;
       }
+
+      @include vp-767 {
+        font-size: 22px;
+        margin-bottom: 9px;
+      }
     }
 
     & span {
@@ -64,6 +83,11 @@
       @include vp-1365 {
         margin-bottom: 20px;
       }
+
+      @include vp-767 {
+        font-size: 64px;
+        margin-bottom: 19px;
+      }
     }
 
     & p {
@@ -72,6 +96,12 @@
       font-size: 18px;
       line-height: 1.33;
       font-weight: 300;
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 26px;
+      }
     }
 
     & a {
@@ -89,12 +119,22 @@
       &[disabled] {
         opacity: 0.5;
       }
+
+      @include vp-767 {
+        margin: 0 auto;
+      }
     }
 
     @include vp-1365 {
       grid-column: span 2;
       grid-row: span 1;
       grid-template-columns: 1fr auto;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      grid-column: span 1;
+      margin-bottom: 10px;
     }
   }
 
@@ -116,6 +156,10 @@
       @include vp-1365 {
         font-size: 24px;
       }
+
+      @include vp-767 {
+        font-size: 22px;
+      }
     }
 
     & p {
@@ -124,6 +168,11 @@
       font-weight: 300;
       line-height: 1.5;
       letter-spacing: -0.15px;
+
+      @include vp-767 {
+        font-size: 14px;
+        line-height: 1.57;
+      }
     }
 
     & a {
@@ -141,6 +190,16 @@
       &[disabled] {
         opacity: 0.3;
       }
+
+      @include vp-767 {
+        transform: translateX(1px);
+        margin: 0 auto;
+      }
+    }
+
+    @include vp-767 {
+      text-align: center;
+      padding: 39px 45px 28px;
     }
   }
 }
@@ -154,6 +213,12 @@
 
   @include vp-1365 {
     padding-top: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 46px;
+    padding-bottom: 40px;
+    text-align: center;
   }
 }
 
