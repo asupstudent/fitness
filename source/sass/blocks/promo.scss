@@ -2,6 +2,10 @@
   max-width: 1160px;
   margin: 0 auto;
   padding: 120px 0;
+
+  @include vp-1365 {
+    padding: 101px 0 100px;
+  }
 }
 
 .promo__title {
@@ -12,6 +16,12 @@
   font-weight: 600;
   line-height: 1;
   letter-spacing: 1.62px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 39px;
+  }
 }
 
 .promo__list {
@@ -21,6 +31,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
 }
 
 .promo__item {
@@ -34,6 +48,11 @@
       font-size: 26px;
       font-weight: 700;
       line-height: 1;
+
+      @include vp-1365 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
     }
 
     & span {
@@ -41,6 +60,10 @@
       font-size: 70px;
       font-weight: 700;
       line-height: 1;
+
+      @include vp-1365 {
+        margin-bottom: 20px;
+      }
     }
 
     & p {
@@ -67,6 +90,12 @@
         opacity: 0.5;
       }
     }
+
+    @include vp-1365 {
+      grid-column: span 2;
+      grid-row: span 1;
+      grid-template-columns: 1fr auto;
+    }
   }
 
   &--secondary {
@@ -83,6 +112,10 @@
       font-size: 26px;
       font-weight: 700;
       line-height: 1;
+
+      @include vp-1365 {
+        font-size: 24px;
+      }
     }
 
     & p {
@@ -118,6 +151,10 @@
   padding: 40px 46px 39px 45px;
   background-color: $color-torch-red-first;
   color: $color-default-white;
+
+  @include vp-1365 {
+    padding-top: 45px;
+  }
 }
 
 .promo__item-image {
