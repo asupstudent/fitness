@@ -1,35 +1,120 @@
 .accordion {
-  // max-width: 500px;
-  margin: 0 auto 50px auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  & & {
-    width: 90%;
-    margin: 0 auto;
+.accordion__element {
+  border-top: 1px solid $color-resolution-blue-20;
+
+  &.is-active .accordion__container {
+    padding-bottom: 10px;
   }
 
-  &__element:last-child {
-    margin-bottom: 0;
+  &.is-active .accordion__button {
+    background-color: $color-sapphire;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
-  &__element {
-    margin-bottom: 34px;
-    padding: 10px;
+  &.is-disabled .accordion__button {
+    border: 1px solid $color-sapphire-30;
+    pointer-events: none;
+    cursor: default;
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
   }
 
-  &__element.is-active > &__button {
-    opacity: 0.5;
+  &:first-child .accordion__wrapper {
+    padding-bottom: 23px;
+  }
+}
+
+.accordion__container {
+  position: relative;
+  padding: 33px 50px 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-transparent;
+  max-width: 100%;
+}
+
+.accordion__container p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: -0.11px;
+}
+
+.accordion__content {
+  max-width: 100%;
+}
+
+.accordion__wrapper {
+  padding: 0 0 25px 0;
+  max-width: 660px;
+}
+
+.accordion__wrapper p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.accordion__button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $color-resolution-blue;
+  background: $color-transparent;
+  border-radius: 50%;
+  top: 25px;
+  right: 1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 9px;
+    background-color: $color-resolution-blue;
+    height: 1px;
+    width: 20px;
+    display: block;
   }
 
-  &__button {
-    width: 100%;
-    padding: 10px;
-
-    text-transform: uppercase;
-
-    cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 9px;
+    transform: rotate(90deg);
+    background-color: $color-resolution-blue;
+    height: 1px;
+    width: 20px;
+    display: block;
   }
 
-  &__wrapper {
-    padding: 10px;
+  &:hover,
+  &:focus {
+    background-color: $color-resolution-blue;
+
+    &::before,
+    &::after {
+      background-color: $color-default-white;
+    }
   }
 }

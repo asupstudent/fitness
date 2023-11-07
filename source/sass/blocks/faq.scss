@@ -4,7 +4,7 @@
 
 .faq__wrapper {
   max-width: 1160px;
-  padding: 120px 0;
+  padding: 120px 0 119px;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .faq__lists {
-  margin: 0;
+  margin: -1px 0 0 0;
   padding: 0;
   list-style: none;
 }
