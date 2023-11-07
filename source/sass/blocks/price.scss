@@ -149,7 +149,8 @@
 
   &:hover:not([disabled]),
   &:active:not([disabled]),
-  &:focus:not([disabled]) {
+  &:focus:not([disabled]),
+  &.is-active {
     outline: none;
     color: $color-sapphire;
 
@@ -159,7 +160,8 @@
     }
   }
 
-  &[disabled] {
+  &[disabled],
+  &.is-disabled {
     opacity: 0.3;
     pointer-events: none;
     cursor: default;

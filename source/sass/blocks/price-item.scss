@@ -8,8 +8,9 @@
   background-color: $color-default-white;
   z-index: 5;
 
-  &:hover,
-  &:focus {
+  &:hover:not(:nth-child(2)),
+  &:focus:not(:nth-child(2)),
+  &.is-active {
     border-image: $gradient-border-tickets-promo;
     border-image-slice: 1;
     padding-bottom: 58px;
@@ -32,8 +33,9 @@
     width: 440px;
     padding-top: 60px;
 
-    &:hover,
-    &:focus {
+    &:hover:not(:nth-child(2)),
+    &:focus:not(:nth-child(2)),
+    &.is-active {
       & .price-item__price {
         margin-bottom: 23px;
       }
@@ -50,8 +52,9 @@
     padding-top: 45px;
     padding-bottom: 45px;
 
-    &:hover,
-    &:focus {
+    &:hover:not(:nth-child(2)),
+    &:focus:not(:nth-child(2)),
+    &.is-active {
       padding-bottom: 43px;
 
       & .price-item__price {
