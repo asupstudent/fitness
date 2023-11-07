@@ -2307,14 +2307,16 @@ button,
 
 .price__control:hover:not([disabled]),
 .price__control:active:not([disabled]),
-.price__control:focus:not([disabled]) {
+.price__control:focus:not([disabled]),
+.price__control.is-active {
   outline: none;
   color: #102654;
 }
 
 .price__control:hover:not([disabled])::before,
 .price__control:active:not([disabled])::before,
-.price__control:focus:not([disabled])::before {
+.price__control:focus:not([disabled])::before,
+.price__control.is-active::before {
   -webkit-transition: 0s;
   transition: 0s;
   -webkit-transform: scale(1);
@@ -2322,7 +2324,8 @@ button,
   transform: scale(1);
 }
 
-.price__control[disabled] {
+.price__control[disabled],
+.price__control.is-disabled {
   opacity: 0.3;
   pointer-events: none;
   cursor: default;
@@ -2361,8 +2364,9 @@ button,
   z-index: 5;
 }
 
-.price-item:hover,
-.price-item:focus {
+.price-item:hover:not(:nth-child(2)),
+.price-item:focus:not(:nth-child(2)),
+.price-item.is-active {
   -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
   border-image: linear-gradient(to bottom right, #d10a42, #00359f);
@@ -2370,8 +2374,9 @@ button,
   padding-bottom: 58px;
 }
 
-.price-item:hover .btn--price:not([disabled]),
-.price-item:focus .btn--price:not([disabled]) {
+.price-item:hover:not(:nth-child(2)) .btn--price:not([disabled]),
+.price-item:focus:not(:nth-child(2)) .btn--price:not([disabled]),
+.price-item.is-active .btn--price:not([disabled]) {
   color: #ffffff;
   background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   outline-color: transparent;
@@ -2380,8 +2385,9 @@ button,
   padding-bottom: 27px;
 }
 
-.price-item:hover .price-item__price,
-.price-item:focus .price-item__price {
+.price-item:hover:not(:nth-child(2)) .price-item__price,
+.price-item:focus:not(:nth-child(2)) .price-item__price,
+.price-item.is-active .price-item__price {
   margin-bottom: 34px;
 }
 
@@ -3476,13 +3482,15 @@ button,
     padding-top: 60px;
   }
 
-  .price-item:hover .price-item__price,
-  .price-item:focus .price-item__price {
+  .price-item:hover:not(:nth-child(2)) .price-item__price,
+  .price-item:focus:not(:nth-child(2)) .price-item__price,
+  .price-item.is-active .price-item__price {
     margin-bottom: 23px;
   }
 
-  .price-item:hover .btn--price:not([disabled]),
-  .price-item:focus .btn--price:not([disabled]) {
+  .price-item:hover:not(:nth-child(2)) .btn--price:not([disabled]),
+  .price-item:focus:not(:nth-child(2)) .btn--price:not([disabled]),
+  .price-item.is-active .btn--price:not([disabled]) {
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -3971,13 +3979,15 @@ button,
     padding-bottom: 45px;
   }
 
-  .price-item:hover,
-  .price-item:focus {
+  .price-item:hover:not(:nth-child(2)),
+  .price-item:focus:not(:nth-child(2)),
+  .price-item.is-active {
     padding-bottom: 43px;
   }
 
-  .price-item:hover .price-item__price,
-  .price-item:focus .price-item__price {
+  .price-item:hover:not(:nth-child(2)) .price-item__price,
+  .price-item:focus:not(:nth-child(2)) .price-item__price,
+  .price-item.is-active .price-item__price {
     margin-bottom: 22px;
   }
 
