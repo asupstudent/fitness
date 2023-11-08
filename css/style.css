@@ -3267,7 +3267,7 @@ button,
 .faq__control {
   padding: 19px 18px 15px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
   color: #102654;
   background-color: rgba(255, 255, 255, 0);
@@ -4528,6 +4528,92 @@ button,
     padding-bottom: 40px;
     text-align: center;
   }
+
+  .accordion__element:first-child .accordion__container {
+    padding-bottom: 20px;
+  }
+
+  .accordion__element:first-child .accordion__wrapper {
+    padding-bottom: 21px;
+  }
+
+  .accordion__element:last-child .accordion__container {
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+
+  .accordion__element:nth-child(3) .accordion__button {
+    top: 36%;
+  }
+
+  .accordion__element:last-child .accordion__button {
+    top: 36%;
+  }
+
+  .accordion__container {
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+
+  .accordion__container p {
+    font-size: 20px;
+    letter-spacing: -0.15px;
+  }
+
+  .accordion__wrapper {
+    max-width: 280px;
+  }
+
+  .accordion__wrapper p {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.12px;
+  }
+
+  .accordion__button {
+    width: 30px;
+    height: 30px;
+    top: 32%;
+  }
+
+  .accordion__button::before,
+  .accordion__button::after {
+    width: 14px;
+    height: 1px;
+    top: 14px;
+    left: 7px;
+  }
+
+  .faq__wrapper {
+    padding: 71px 0 70px;
+  }
+
+  .faq__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 36px;
+  }
+
+  .faq__container {
+    gap: 30px;
+  }
+
+  .faq__controls {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .faq__control {
+    font-size: 16px;
+    padding: 15px 18px 11px;
+  }
+
+  .faq__control.is-active {
+    padding: 16px 18px 12px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4567,6 +4653,20 @@ button,
   }
 }
 
+@media (max-width: 450px) {
+  .faq__controls {
+    -ms-grid-columns: (141px)[2];
+    grid-template-columns: repeat(2, 141px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .faq__control {
+    max-width: 141px;
+  }
+}
+
 @media (max-width: 400px) {
   .hero__services-list {
     -ms-grid-column-align: end;
@@ -4577,6 +4677,17 @@ button,
 @media (max-width: 320px) {
   .about__description-wrapper {
     max-width: 279px;
+  }
+}
+
+@media (max-width: 319px) {
+  .faq__controls {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .faq__control {
+    max-width: 100%;
   }
 }
 
