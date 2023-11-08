@@ -3152,11 +3152,14 @@ button,
 .accordion__container p {
   margin: 0;
   font-size: 24px;
-  font-weight: 500;
   line-height: 1;
   text-align: left;
   text-transform: none;
   letter-spacing: -0.11px;
+}
+
+.accordion_br {
+  display: none;
 }
 
 .accordion__content {
@@ -3826,6 +3829,48 @@ button,
 
   .promo__item-description {
     padding-top: 45px;
+  }
+
+  .accordion__element.is-active .accordion__container {
+    padding-bottom: 9px;
+  }
+
+  .accordion__element:first-child .accordion__wrapper {
+    padding-bottom: 25px;
+  }
+
+  .accordion__element:last-child .accordion__container {
+    padding-top: 26px;
+    padding-bottom: 23px;
+  }
+
+  .accordion__element:last-child .accordion__button {
+    top: 27px;
+  }
+
+  .accordion__container {
+    padding-top: 35px;
+  }
+
+  .accordion__container p {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  .accordion_br {
+    display: block;
+  }
+
+  .accordion__wrapper {
+    max-width: 550px;
+  }
+
+  .accordion__wrapper p {
+    line-height: 1.33;
+  }
+
+  .accordion__button {
+    right: 0;
   }
 
   .faq__wrapper {
