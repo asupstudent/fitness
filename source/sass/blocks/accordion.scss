@@ -56,6 +56,29 @@
       top: 27px;
     }
   }
+
+  @include vp-767 {
+    &:first-child .accordion__container {
+      padding-bottom: 20px;
+    }
+
+    &:first-child .accordion__wrapper {
+      padding-bottom: 21px;
+    }
+
+    &:last-child .accordion__container {
+      padding-top: 22px;
+      padding-bottom: 21px;
+    }
+
+    &:nth-child(3) .accordion__button {
+      top: 36%;
+    }
+
+    &:last-child .accordion__button {
+      top: 36%;
+    }
+  }
 }
 
 .accordion__container {
@@ -70,6 +93,11 @@
   @include vp-1365 {
     padding-top: 35px;
   }
+
+  @include vp-767 {
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
 }
 
 .accordion__container p {
@@ -83,6 +111,11 @@
   @include vp-1365 {
     font-size: 22px;
     letter-spacing: 0;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    letter-spacing: -0.15px;
   }
 }
 
@@ -105,6 +138,10 @@
   @include vp-1365 {
     max-width: 550px;
   }
+
+  @include vp-767 {
+    max-width: 280px;
+  }
 }
 
 .accordion__wrapper p {
@@ -115,6 +152,12 @@
 
   @include vp-1365 {
     line-height: 1.33;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.12px;
   }
 }
 
@@ -163,5 +206,19 @@
 
   @include vp-1365 {
     right: 0;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+    top: 32%;
+
+    &::before,
+    &::after {
+      width: 14px;
+      height: 1px;
+      top: 14px;
+      left: 7px;
+    }
   }
 }
