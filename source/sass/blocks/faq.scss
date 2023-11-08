@@ -6,6 +6,10 @@
   max-width: 1160px;
   padding: 120px 0 119px;
   margin: 0 auto;
+
+  @include vp-1365 {
+    padding: 101px 0 100px;
+  }
 }
 
 .faq__title {
@@ -15,18 +19,35 @@
   font-weight: 600;
   line-height: 1;
   letter-spacing: 1.72px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 49px;
+    text-align: center;
+  }
 }
 
 .faq__container {
   display: grid;
   gap: 40px;
   grid-template-columns: 22.4% 74.2%;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .faq__controls {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @include vp-1365 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .faq__control {
@@ -55,6 +76,15 @@
     border-color: $color-sapphire-20;
     pointer-events: none;
     cursor: default;
+  }
+
+  @include vp-1365 {
+    width: 100%;
+
+    &.is-active {
+      padding-left: 19px;
+      padding-right: 19px;
+    }
   }
 }
 
