@@ -1,6 +1,6 @@
-const container = document.querySelector('.about__video');
-const cover = document.querySelector('.about__video').querySelector('picture');
-const button = document.querySelector('.about__video').querySelector('.about__play-button');
+const container = document.querySelector('[data-video="about-video"]');
+const cover = document.querySelector('[data-video="about-video"]').querySelector('picture');
+const button = document.querySelector('[data-video="about-video"]').querySelector('[data-play-button="play-button"]');
 
 const createVideo = () => {
   const video = document.createElement('iframe');

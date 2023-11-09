@@ -79,7 +79,7 @@
                   <img src="./img/content/about/gym-desktop@1x.jpg" width="660" height="401" srcset="./img/content/about/gym-desktop@2x.jpg 2x" alt="Тренажерный зал.">
                 </picture>
               </div>
-              <div class="about__video about__video--overlay">
+              <div class="about__video about__video--overlay" data-video="about-video">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" width="320" height="167" srcset="./img/content/about/cover-mobile@1x.webp 1x, ./img/content/about/cover-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)" width="266" height="167" srcset="./img/content/about/cover-tablet@1x.webp 1x, ./img/content/about/cover-tablet@2x.webp 2x">
@@ -88,7 +88,7 @@
                   <source type="image/jpeg" media="(max-width: 1365px)" width="266" height="167" srcset="./img/content/about/cover-tablet@1x.jpg 1x, ./img/content/about/cover-tablet@2x.jpg 2x">
                   <img src="./img/content/about/cover-desktop@1x.jpg" width="364" height="228" srcset="./img/content/about/cover-desktop@2x.jpg 2x" alt="Постер видео тренажерного зала.">
                 </picture>
-                <button class="about__play-button" type="button" aria-label="Воспроизвести видео.">
+                <button class="about__play-button" type="button" data-play-button="play-button" aria-label="Воспроизвести видео.">
                   <svg width="17" height="17" viewBox="0 0 17 17" role="img">
                     <use href="img/sprite.svg#play"></use>
                   </svg>
@@ -255,12 +255,12 @@
         <div class="container">
           <div class="jury__wrapper">
             <h2 class="jury__title">Жюри</h2>
-            <button class="jury__button jury__button--prev" type="button" aria-label="Предыдущий слайд.">
+            <button class="jury__button jury__button--prev" type="button" data-button="prev-jury" aria-label="Предыдущий слайд.">
               <svg width="18" height="34">
                 <use href="img/sprite.svg#arrow"></use>
               </svg>
             </button>
-            <div class="jury__swiper swiper">
+            <div class="jury__swiper swiper" data-jury="jury">
               <ul class="jury__list swiper-wrapper">
                 <li class="jury__item swiper-slide">
                   <h3 class="jury__item-title">Анна Павлова</h3>
@@ -424,7 +424,7 @@
                 </li>
               </ul>
             </div>
-            <button class="jury__button jury__button--next" type="button" aria-label="Следующий слайд.">
+            <button class="jury__button jury__button--next" type="button" data-button="next-jury" aria-label="Следующий слайд.">
               <svg width="18" height="34">
                 <use href="img/sprite.svg#arrow"></use>
               </svg>
@@ -729,6 +729,53 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrapper">
+            <h2 class="reviews__title">Отзывы</h2>
+            <button class="reviews__button reviews__button--prev" type="button" data-button="prev-reviews" aria-label="Назад.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <div class="reviews__swiper swiper" data-reviews="reviews">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__item swiper-slide">
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="68" height="68" srcset="./img/content/reviews/avatar-mobile@1x.webp 1x, ./img/content/reviews/avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="80" height="80" srcset="./img/content/reviews/avatar-desktop@1x.webp 1x, ./img/content/reviews/avatar-desktop@2x.webp 2x">
+                      <source type="image/png" media="(max-width: 767px)" width="68" height="68" srcset="./img/content/reviews/avatar-mobile@1x.png 1x, ./img/content/reviews/avatar-mobile@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="./img/content/reviews/avatar-desktop@1x.png 1x, ./img/content/reviews/avatar-desktop@2x.png 2x">
+                      <img src="./img/content/reviews/avatar-desktop@1x.png" width="80" height="80" srcset="./img/content/reviews/avatar-desktop@2x.png 2x" alt="Анна Орлова.">
+                    </picture>
+                  </div>
+                  <p>Анна Орлова</p>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="68" height="68" srcset="./img/content/reviews/avatar-mobile@1x.webp 1x, ./img/content/reviews/avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="80" height="80" srcset="./img/content/reviews/avatar-desktop@1x.webp 1x, ./img/content/reviews/avatar-desktop@2x.webp 2x">
+                      <source type="image/png" media="(max-width: 767px)" width="68" height="68" srcset="./img/content/reviews/avatar-mobile@1x.png 1x, ./img/content/reviews/avatar-mobile@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="./img/content/reviews/avatar-desktop@1x.png 1x, ./img/content/reviews/avatar-desktop@2x.png 2x">
+                      <img src="./img/content/reviews/avatar-desktop@1x.png" width="80" height="80" srcset="./img/content/reviews/avatar-desktop@2x.png 2x" alt="Анна Орлова.">
+                    </picture>
+                  </div>
+                  <p>Ильичева Елена</p>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </li>
+              </ul>
+            </div>
+            <button class="reviews__button reviews__button--next" type="button" data-button="next-reviews" aria-label="Вперед.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
