@@ -1,0 +1,8 @@
+.feedback-contacts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+  }
+}
