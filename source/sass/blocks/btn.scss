@@ -83,4 +83,12 @@
       font-weight: 700;
     }
   }
+
+  &--form {
+    width: 100%;
+    padding: 26px 10px 24px;
+    color: $color-default-white;
+    border: 2px solid $color-default-white;
+    background-color: transparent;
+  }
 }
