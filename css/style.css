@@ -3447,6 +3447,33 @@ button,
   transform: translate(-50%, 50%);
 }
 
+.feedback-contacts-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+  grid-template-columns: repeat(2, 50%);
+}
+
+.feedback {
+  background-color: #102654;
+  color: #ffffff;
+}
+
+.feedback__wrapper {
+  margin: 0 0 0 auto;
+  max-width: 683px;
+  padding: 60px 170px 60px 103px;
+}
+
+.feedback__title {
+  margin: 0 0 18px 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.62px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -4089,6 +4116,11 @@ button,
   .reviews__button--next {
     right: -21px;
     top: 52.3%;
+  }
+
+  .feedback-contacts-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
