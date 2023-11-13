@@ -6,6 +6,14 @@
   font-weight: 600;
   src: url("../fonts/alumni-sans-v18-cyrillic-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* alumni-sans-700 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/alumni-sans-v18-cyrillic-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* alumni-sans-800 - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
