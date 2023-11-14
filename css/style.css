@@ -4217,10 +4217,14 @@ button,
     margin-left: -1px;
   }
 
+  .contacts {
+    border: none;
+  }
+
   .contacts__wrapper {
     max-width: 502px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 101px 0 72px;
   }
 
   .contacts__title {
@@ -5081,6 +5085,19 @@ button,
     margin-left: 0;
   }
 
+  .contacts__wrapper {
+    margin: 0;
+    padding: 64px 15px 40px;
+    max-width: 100vw;
+  }
+
+  .contacts__title {
+    margin-bottom: 33px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+  }
+
   .contacts__lists {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -5089,6 +5106,24 @@ button,
 
   .contacts__lists::before {
     content: none;
+  }
+
+  .contacts__lists address,
+  .contacts__lists p,
+  .contacts__lists a {
+    line-height: 20px;
+  }
+
+  .contacts__list--left .contacts__item h3 {
+    margin-bottom: 12px;
+  }
+
+  .contacts__item {
+    margin-bottom: 28px;
+  }
+
+  .contacts__item h3 {
+    font-size: 20px;
   }
 }
 
