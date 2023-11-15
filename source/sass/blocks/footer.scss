@@ -1,10 +1,26 @@
 .footer {
   background-color: $color-black-russian;
   min-height: 105px;
+
+  @include vp-1365 {
+    min-height: 115px;
+  }
+
+  @include vp-767 {
+    min-height: 260px;
+  }
 }
 
 .footer .container {
   padding: 0 93px;
+
+  @include vp-1365 {
+    padding: 0 35px;
+  }
+
+  @include vp-767 {
+    padding: 0 5px;
+  }
 }
 
 .footer__wrapper {
@@ -30,11 +46,23 @@
   & .footer__social-link {
     padding: 0;
   }
+
+  @include vp-1365 {
+    gap: 22px;
+    padding-top: 39px;
+    padding-bottom: 27px;
+  }
 }
 
 .footer__logo {
-  min-width: 109px;
+  min-width: 129px;
+  width: 129px;
   margin-left: 1px;
+
+  @include vp-1365 {
+    min-width: 120px;
+    width: 120px;
+  }
 }
 
 .footer__navigation {
@@ -44,6 +72,12 @@
   padding: 0;
   margin: -10px 25px 0 0;
   min-width: 452px;
+
+  @include vp-1365 {
+    gap: 10px;
+    margin: -10px 0 0 0;
+    min-width: 427px;
+  }
 }
 
 .footer__navigation-item {
@@ -102,6 +136,11 @@
   padding: 0;
   margin: 0 10px 11px 0;
   max-width: 195px;
+
+  @include vp-1365 {
+    max-width: 130px;
+    margin-bottom: 11px;
+  }
 }
 
 .footer__social-item {
