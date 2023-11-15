@@ -138,12 +138,11 @@
   margin: 0;
   line-height: 1.5;
   font-weight: 300;
-  letter-spacing: -0.1px;
 
   @include vp-767 {
     text-align: center;
     font-size: 14px;
-    line-height: 1.57;
+    line-height: 22px;
     padding-top: 7px;
   }
 }

@@ -21,11 +21,12 @@
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
-  letter-spacing: 1.72px;
+  line-height: 54px;
+  letter-spacing: 1.62px;
 
   @include vp-1365 {
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 49px;
     text-align: center;
@@ -33,6 +34,7 @@
 
   @include vp-767 {
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 36px;
   }
@@ -83,7 +85,7 @@
   padding: 19px 18px 15px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 18px;
   color: $color-sapphire;
   background-color: $color-transparent;
   cursor: pointer;
@@ -118,6 +120,7 @@
 
   @include vp-767 {
     font-size: 16px;
+    line-height: 16px;
     padding: 15px 18px 11px;
 
     &.is-active {

@@ -8,11 +8,11 @@
   border-top: 1px solid $color-resolution-blue-20;
 
   &.is-active .accordion__container {
-    padding-bottom: 10px;
+    padding-bottom: 14px;
   }
 
   &.is-active .accordion__button {
-    background-color: $color-sapphire;
+    background-color: $color-resolution-blue;
 
     &::before {
       background-color: $color-default-white;
@@ -35,7 +35,7 @@
   }
 
   &:first-child .accordion__wrapper {
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 
   @include vp-1365 {
@@ -103,19 +103,18 @@
 .accordion__container p {
   margin: 0;
   font-size: 24px;
-  line-height: 1;
+  line-height: 24px;
   text-align: left;
   text-transform: none;
-  letter-spacing: -0.11px;
 
   @include vp-1365 {
     font-size: 22px;
-    letter-spacing: 0;
+    line-height: 22px;
   }
 
   @include vp-767 {
     font-size: 20px;
-    letter-spacing: -0.15px;
+    line-height: 20px;
   }
 }
 
@@ -140,24 +139,19 @@
   }
 
   @include vp-767 {
-    max-width: 280px;
+    max-width: 275px;
   }
 }
 
 .accordion__wrapper p {
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 24px;
   margin: 0;
-
-  @include vp-1365 {
-    line-height: 1.33;
-  }
 
   @include vp-767 {
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.12px;
+    line-height: 20px;
   }
 }
 
