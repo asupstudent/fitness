@@ -3572,7 +3572,8 @@ button,
 }
 
 .footer__logo {
-  min-width: 109px;
+  min-width: 129px;
+  width: 129px;
   margin-left: 1px;
 }
 
@@ -4426,6 +4427,36 @@ button,
   .contacts__item h3 {
     font-size: 22px;
     margin-bottom: 9px;
+  }
+
+  .footer {
+    min-height: 115px;
+  }
+
+  .footer .container {
+    padding: 0 35px;
+  }
+
+  .footer__wrapper {
+    gap: 22px;
+    padding-top: 39px;
+    padding-bottom: 27px;
+  }
+
+  .footer__logo {
+    min-width: 120px;
+    width: 120px;
+  }
+
+  .footer__navigation {
+    gap: 10px;
+    margin: -10px 0 0 0;
+    min-width: 427px;
+  }
+
+  .footer__social-list {
+    max-width: 130px;
+    margin-bottom: 11px;
   }
 }
 
@@ -5298,6 +5329,14 @@ button,
 
   .contacts__item h3 {
     font-size: 20px;
+  }
+
+  .footer {
+    min-height: 260px;
+  }
+
+  .footer .container {
+    padding: 0 5px;
   }
 }
 
