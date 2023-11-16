@@ -172,7 +172,7 @@
   @include vp-1365 {
     padding: 18px 10px 12px;
     font-size: 18px;
-    line-height: 1;
+    line-height: 18px;
 
     &::before {
       bottom: -1px;
@@ -184,6 +184,7 @@
   @include vp-767 {
     padding: 20px 15px 12px;
     font-size: 16px;
+    line-height: 16px;
 
     &::before {
       bottom: -5px;
