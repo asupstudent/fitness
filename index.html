@@ -10,9 +10,9 @@
     <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/AlumniSans-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -20,40 +20,42 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header" data-test="hero">
+      <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <nav class="header__main-nav main-nav">
-              <a class="main-nav__logo logo" href="#">
-                <img src="img/content/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
-              </a>
-              <ul class="main-nav__contacts">
-                <li class="main-nav__contacts-item">
-                  <a class="main-nav__contacts-link" href="tel:+78005555555">8-800-555-55-55</a>
-                </li>
-              </ul>
-            </nav>
-            <section class="header__hero hero">
-              <div class="hero__wrapper">
-                <p class="hero__city">Омск</p>
-                <h1 class="hero__title">Фитнес центр</h1>
-                <ul class="hero__services-list">
-                  <li class="hero__services-list-item">Тренажёрный&nbsp;зал</li>
-                  <li class="hero__services-list-item">Групповые&nbsp;занятия</li>
-                  <li class="hero__services-list-item">Кардио-зона</li>
+            <div data-test="hero">
+              <nav class="header__main-nav main-nav">
+                <a class="main-nav__logo logo" href="#">
+                  <img src="img/content/logo.svg" width="120" height="26" alt="Логотип SUPERGYM.">
+                </a>
+                <ul class="main-nav__contacts">
+                  <li class="main-nav__contacts-item">
+                    <a class="main-nav__contacts-link" href="tel:+78005555555">8-800-555-55-55</a>
+                  </li>
                 </ul>
-                <a class="hero__btn btn btn--hero" href="#price">Купить абонемент</a>
-              </div>
-              <div class="hero__image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.webp 1x, ./img/content/hero/hero-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 1366px)" width="500" height="524" srcset="./img/content/hero/hero-desktop@1x.webp 1x, ./img/content/hero/hero-desktop@2x.webp 2x">
-                  <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.jpg 1x, ./img/content/hero/hero-tablet@2x.jpg 2x">
-                  <source type="image/jpeg" media="(min-width: 1366px)" width="500" height="524" srcset="./img/content/hero/hero-desktop@1x.jpg 1x, ./img/content/hero/hero-desktop@2x.jpg 2x">
-                  <img src="./img/content/hero/hero-desktop@1x.jpg" width="500" height="524" srcset="./img/content/hero/hero-desktop@2x.jpg 2x" alt="Тренер в футболке в большой буквой S">
-                </picture>
-              </div>
-            </section>
+              </nav>
+              <section class="header__hero hero">
+                <div class="hero__wrapper">
+                  <p class="hero__city">Омск</p>
+                  <h1 class="hero__title">Фитнес центр</h1>
+                  <ul class="hero__services-list">
+                    <li class="hero__services-list-item">Тренажёрный зал</li>
+                    <li class="hero__services-list-item">Групповые&nbsp;занятия</li>
+                    <li class="hero__services-list-item">Кардио-зона</li>
+                  </ul>
+                  <a class="hero__btn btn btn--hero" href="#price">Купить абонемент</a>
+                </div>
+                <div class="hero__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.webp 1x, ./img/content/hero/hero-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1366px)" width="500" height="524" srcset="./img/content/hero/hero-desktop@1x.webp 1x, ./img/content/hero/hero-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.jpg 1x, ./img/content/hero/hero-tablet@2x.jpg 2x">
+                    <source type="image/jpeg" media="(min-width: 1366px)" width="500" height="524" srcset="./img/content/hero/hero-desktop@1x.jpg 1x, ./img/content/hero/hero-desktop@2x.jpg 2x">
+                    <img src="./img/content/hero/hero-desktop@1x.jpg" width="500" height="524" srcset="./img/content/hero/hero-desktop@2x.jpg 2x" alt="Тренер в футболке в большой буквой S">
+                  </picture>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </header>
@@ -227,7 +229,7 @@
             <div class="games__wrapper">
               <div class="games__content-wrapper">
                 <div class="games__main-content">
-                  <h2 class="games__title">Super <span>games</span></h2>
+                  <h2 class="games__title">Super games</h2>
                   <dl class="games__date">
                     <dt>Дата</dt>
                     <dd>7 <span>Марта 2019</span></dd>
@@ -542,7 +544,7 @@
                   <ul class="accordion" data-accordion="parent">
                     <li class="accordion__element is-active" data-accordion="element">
                       <div class="accordion__container">
-                        <p>Как стать членом фитнес&#8209;центра?</p>
+                        <p>Как стать членом<br class="accordion_br-mobile"> фитнес-центра?</p>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="Открыть"></button>
                       </div>
                       <div class="accordion__content" data-accordion="content">
@@ -575,7 +577,7 @@
                     </li>
                     <li class="accordion__element" data-accordion="element">
                       <div class="accordion__container">
-                        <p>Сколько тренеров работает в клубе и какова<br class="accordion_br"> их квалификация?</p>
+                        <p>Сколько тренеров работает в клубе и какова<br class="accordion_br-tablet"> их квалификация?</p>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="Открыть"></button>
                       </div>
                       <div class="accordion__content" data-accordion="content">
@@ -649,7 +651,7 @@
                     </li>
                     <li class="accordion__element" data-accordion="element">
                       <div class="accordion__container">
-                        <p>Проводятся ли в клубе какие&#8209;либо мероприятия или соревнования?</p>
+                        <p>Проводятся ли в клубе какие-либо мероприятия или соревнования?</p>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="Открыть"></button>
                       </div>
                       <div class="accordion__content" data-accordion="content">
@@ -686,7 +688,7 @@
                   <ul class="accordion" data-accordion="parent">
                     <li class="accordion__element" data-accordion="element">
                       <div class="accordion__container">
-                        <p>Есть в фитнес&#8209;центре дресс&#8209;код?</p>
+                        <p>Есть в фитнес-центре дресс-код?</p>
                         <button class="accordion__button" type="button" data-accordion="button" aria-label="Открыть"></button>
                       </div>
                       <div class="accordion__content" data-accordion="content">

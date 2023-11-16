@@ -1285,76 +1285,52 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/* alumni-sans-600 - cyrillic */
-
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/* alumni-sans-700 - cyrillic */
 
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/AlumniSans-Bold.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/* alumni-sans-800 - cyrillic */
 
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/AlumniSans-Black.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/* roboto-condensed-300 - cyrillic */
 
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/roboto-condensed-v27-cyrillic-300.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2");
 }
-
-/* roboto-condensed-regular - cyrillic */
 
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-condensed-v27-cyrillic-regular.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
-
-/* roboto-condensed-700 - cyrillic */
 
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-condensed-v27-cyrillic-700.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 
 *,
@@ -1581,7 +1557,7 @@ button,
   padding: 25px;
   font-size: 12px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   text-align: center;
@@ -1735,9 +1711,8 @@ button,
   padding: 7px 10px 13px;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1;
+  line-height: 26px;
   color: #ffffff;
-  letter-spacing: 0.2px;
 }
 
 .main-nav .main-nav__contacts-link::before {
@@ -1824,7 +1799,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
   text-transform: uppercase;
 }
@@ -1838,7 +1813,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
   font-weight: 800;
-  line-height: 1.19;
+  line-height: 110px;
   text-transform: uppercase;
   letter-spacing: 4.6px;
   word-wrap: break-word;
@@ -1852,7 +1827,7 @@ button,
   margin: 12px 0 0 0;
   list-style: none;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 22px;
   -ms-grid-row-align: center;
   align-self: center;
 }
@@ -1883,14 +1858,14 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
 }
 
 .about__text-block p {
   margin: 0 0 89px 0;
   font-size: 22px;
-  letter-spacing: -0.1px;
+  line-height: 22px;
 }
 
 .about__description-wrapper {
@@ -1907,8 +1882,8 @@ button,
 .about__description-wrapper p {
   margin: 0;
   font-weight: 300;
-  letter-spacing: -0.1px;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .about__media-block {
@@ -2173,7 +2148,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
 }
 
@@ -2210,7 +2185,7 @@ button,
   display: inline-block;
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -2325,12 +2300,13 @@ button,
   margin: 0 0 4px 0;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 26px;
 }
 
 .price-item__description {
   margin: 0 0 69px 0;
   font-weight: 300;
+  line-height: 24px;
 }
 
 .price-item__price {
@@ -2338,10 +2314,9 @@ button,
   margin: 0 0 36px 0;
   font-size: 60px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 90px;
   color: #103aae;
   z-index: 1;
-  letter-spacing: 0.5px;
 }
 
 .price-item__price::before {
@@ -2352,11 +2327,11 @@ button,
   color: #e8e8e8;
   opacity: 0.48;
   font-size: 100px;
+  line-height: 150px;
   z-index: -1;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  letter-spacing: -0.3px;
 }
 
 .price-item__description span {
@@ -2760,13 +2735,13 @@ button,
   margin: 50px 0 12px 2px;
   font-size: 70px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 70px;
 }
 
 .features__item--decorated div {
   font-size: 26px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 26px;
   margin-bottom: 35px;
 }
 
@@ -2774,14 +2749,14 @@ button,
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .features__item-title p {
   margin: 0;
   font-size: 70px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 70px;
   background: linear-gradient(142deg, #d10a42 0%, #0041ca 88.2%);
   color: transparent;
   -webkit-background-clip: text;
@@ -2789,8 +2764,8 @@ button,
 }
 
 .features__item-title div {
-  line-height: 1.57;
   font-size: 14px;
+  line-height: 22px;
   margin-top: 1px;
   color: #2e35ac;
 }
@@ -2800,14 +2775,14 @@ button,
   padding-top: 1px;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 22px;
 }
 
 .features__item-text p {
   margin: 0;
   padding-top: 7px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .features__br {
@@ -2826,7 +2801,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
 }
 
@@ -2854,14 +2829,14 @@ button,
   margin: 0 0 15px 0;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 26px;
 }
 
 .promo__item--primary span {
   margin-bottom: 25px;
   font-size: 70px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 70px;
 }
 
 .promo__item--primary p {
@@ -2870,7 +2845,7 @@ button,
   flex-grow: 1;
   margin: 0;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 24px;
   font-weight: 300;
 }
 
@@ -2912,7 +2887,8 @@ button,
   margin: 0 0 10px 0;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 26px;
+  color: #1c3374;
 }
 
 .promo__item--secondary p {
@@ -2921,8 +2897,8 @@ button,
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: -0.15px;
+  line-height: 24px;
+  color: #1c3374;
 }
 
 .promo__item--secondary a {
@@ -2973,7 +2949,7 @@ button,
   width: -moz-max-content;
   width: max-content;
   font-weight: 700;
-  line-height: 1;
+  line-height: 14px;
   text-transform: uppercase;
   padding: 10px;
   margin-left: -10px;
@@ -3032,8 +3008,12 @@ button,
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
+.accordion__element.is-active {
+  margin-bottom: 2px;
+}
+
 .accordion__element.is-active .accordion__container {
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .accordion__element.is-active .accordion__button {
@@ -3087,7 +3067,11 @@ button,
   text-transform: none;
 }
 
-.accordion_br {
+.accordion_br-tablet {
+  display: none;
+}
+
+.accordion_br-mobile {
   display: none;
 }
 
@@ -3245,7 +3229,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
   text-align: center;
 }
@@ -3305,12 +3289,12 @@ button,
   margin: 0;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 22px;
 }
 
 .reviews__item p:last-child {
   margin: 0;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 300;
 }
 
@@ -3758,7 +3742,6 @@ button,
 
   .btn--price {
     padding: 20px;
-    font-weight: 400;
   }
 
   .btn--games {
@@ -3773,7 +3756,6 @@ button,
 
   .btn--form {
     width: 100.3%;
-    font-weight: 400;
     padding: 20px 10px;
   }
 
@@ -3803,8 +3785,8 @@ button,
 
   .main-nav .main-nav__contacts-link {
     font-size: 24px;
+    line-height: 24px;
     padding: 6px 9px 11px 14px;
-    letter-spacing: 0;
   }
 
   .hero {
@@ -3828,13 +3810,14 @@ button,
 
   .hero__city {
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
   }
 
   .hero__title {
     font-size: 72px;
+    line-height: 85px;
     padding-bottom: 49px;
-    letter-spacing: 0;
   }
 
   .hero__services-list {
@@ -3867,22 +3850,19 @@ button,
   .about__text-block h2 {
     margin-bottom: 19px;
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
   }
 
   .about__text-block p {
     font-size: 20px;
-    line-height: 1;
+    line-height: 20px;
     margin-left: -5px;
     margin-bottom: 34px;
   }
 
   .about__description-wrapper {
     margin: 0 auto;
-  }
-
-  .about__description-wrapper p {
-    line-height: 1.5;
   }
 
   .about__description-wrapper p:last-child {
@@ -3952,6 +3932,7 @@ button,
 
   .price__title {
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 19px;
   }
@@ -4006,12 +3987,11 @@ button,
 
   .price-item__title {
     font-size: 24px;
-    line-height: 1;
+    line-height: 24px;
     margin-bottom: 14px;
   }
 
   .price-item__description {
-    line-height: 1.5;
     margin-bottom: 75px;
   }
 
@@ -4164,6 +4144,7 @@ button,
 
   .features__item--decorated div {
     font-size: 24px;
+    line-height: 24px;
     margin-bottom: 25px;
   }
 
@@ -4191,6 +4172,7 @@ button,
 
   .features__item-text h3 {
     font-size: 20px;
+    line-height: 20px;
     padding-left: 1px;
     padding-top: 0;
   }
@@ -4205,6 +4187,7 @@ button,
 
   .promo__title {
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 39px;
   }
@@ -4215,6 +4198,7 @@ button,
 
   .promo__item--primary h3 {
     font-size: 24px;
+    line-height: 24px;
     margin-bottom: 5px;
   }
 
@@ -4233,18 +4217,23 @@ button,
 
   .promo__item--secondary h3 {
     font-size: 24px;
+    line-height: 24px;
   }
 
   .promo__item-description {
     padding-top: 45px;
   }
 
+  .accordion__element.is-active {
+    margin-bottom: 0;
+  }
+
   .accordion__element.is-active .accordion__container {
-    padding-bottom: 9px;
+    padding-bottom: 10px;
   }
 
   .accordion__element:first-child .accordion__wrapper {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
   }
 
   .accordion__element:last-child .accordion__container {
@@ -4265,7 +4254,7 @@ button,
     line-height: 22px;
   }
 
-  .accordion_br {
+  .accordion_br-tablet {
     display: block;
   }
 
@@ -4320,6 +4309,7 @@ button,
 
   .reviews__title {
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 41px;
   }
@@ -4341,6 +4331,7 @@ button,
 
   .reviews__item p:nth-child(2) {
     font-size: 20px;
+    line-height: 20px;
   }
 
   .reviews__button--prev {
@@ -4403,7 +4394,7 @@ button,
     margin-bottom: 36px;
     font-size: 42px;
     font-weight: 700;
-    line-height: normal;
+    line-height: 42px;
     letter-spacing: 1.26px;
   }
 
@@ -4423,6 +4414,7 @@ button,
 
   .contacts__item h3 {
     font-size: 22px;
+    line-height: 22px;
     margin-bottom: 8px;
   }
 
@@ -4483,10 +4475,6 @@ button,
     padding: 0 15px;
   }
 
-  .btn--price {
-    font-weight: 700;
-  }
-
   .btn--games {
     padding-bottom: 20px;
     font-weight: 700;
@@ -4494,7 +4482,6 @@ button,
 
   .btn--form {
     width: 100%;
-    font-weight: 700;
   }
 
   .header {
@@ -4521,6 +4508,7 @@ button,
 
   .main-nav .main-nav__contacts-link {
     font-size: 22px;
+    line-height: 22px;
     padding: 8px 12px;
   }
 
@@ -4546,6 +4534,7 @@ button,
   .hero__city {
     max-width: 290px;
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
   }
 
@@ -4555,13 +4544,14 @@ button,
     letter-spacing: 1.86px;
     padding-top: 14px;
     padding-bottom: 59px;
-    line-height: 1.13;
+    line-height: 70px;
   }
 
   .hero__services-list {
     -ms-grid-column-align: center;
     justify-self: center;
     margin-top: 30px;
+    line-height: 20px;
   }
 
   .hero__btn {
@@ -4584,6 +4574,7 @@ button,
 
   .about__text-block h2 {
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 12px;
   }
@@ -4592,8 +4583,7 @@ button,
     margin-left: 0;
     margin-bottom: 38px;
     font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: 0;
+    line-height: 20px;
   }
 
   .about__description-wrapper {
@@ -4602,8 +4592,7 @@ button,
 
   .about__description-wrapper p {
     font-size: 14px;
-    line-height: 1.57;
-    letter-spacing: 0;
+    line-height: 22px;
   }
 
   .about__media-block {
@@ -4670,6 +4659,7 @@ button,
 
   .price__title {
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 2px;
   }
@@ -4724,21 +4714,24 @@ button,
 
   .price-item__title {
     font-size: 22px;
+    line-height: 22px;
   }
 
   .price-item__description {
     font-size: 14px;
+    line-height: 22px;
     margin-bottom: 64px;
-    line-height: 1.57;
   }
 
   .price-item__price {
     margin-bottom: 24px;
     font-size: 48px;
+    line-height: 72px;
   }
 
   .price-item__price::before {
     font-size: 80px;
+    line-height: 120px;
     top: 16px;
     left: -14px;
   }
@@ -4938,17 +4931,19 @@ button,
     margin-top: 1px;
     margin-bottom: 5px;
     font-size: 64px;
+    line-height: 64px;
   }
 
   .features__item--decorated div {
     font-size: 22px;
+    line-height: 22px;
     margin-bottom: 20px;
   }
 
   .features__item--decorated h3 {
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.57;
+    line-height: 22px;
   }
 
   .features__item--decorated {
@@ -4989,21 +4984,21 @@ button,
 
   .features__item-title p {
     font-size: 64px;
+    line-height: 64px;
   }
 
   .features__item-title div {
-    line-height: 1.42;
+    line-height: 20px;
     margin-top: 0;
   }
 
   .features__item-text h3 {
     font-size: 18px;
-    line-height: 1.11;
   }
 
   .features__item-text p {
     font-size: 14px;
-    line-height: 1.57;
+    line-height: 22px;
     padding-top: 13px;
   }
 
@@ -5017,6 +5012,7 @@ button,
 
   .promo__title {
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 41px;
   }
@@ -5028,17 +5024,19 @@ button,
 
   .promo__item--primary h3 {
     font-size: 22px;
+    line-height: 22px;
     margin-bottom: 9px;
   }
 
   .promo__item--primary span {
     font-size: 64px;
+    line-height: 64px;
     margin-bottom: 19px;
   }
 
   .promo__item--primary p {
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 20px;
     margin-bottom: 26px;
   }
 
@@ -5056,11 +5054,12 @@ button,
 
   .promo__item--secondary h3 {
     font-size: 22px;
+    line-height: 22px;
   }
 
   .promo__item--secondary p {
     font-size: 14px;
-    line-height: 1.57;
+    line-height: 22px;
   }
 
   .promo__item--secondary a {
@@ -5110,6 +5109,10 @@ button,
   .accordion__container p {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .accordion_br-mobile {
+    display: block;
   }
 
   .accordion__wrapper {
@@ -5174,6 +5177,7 @@ button,
 
   .reviews__title {
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 45px;
     -webkit-transform: translateX(-1px);
@@ -5208,7 +5212,7 @@ button,
 
   .reviews__item p:nth-child(2) {
     font-size: 18px;
-    line-height: 1.11;
+    line-height: 20px;
   }
 
   .reviews__item p:last-child {
@@ -5329,6 +5333,7 @@ button,
 
   .contacts__item h3 {
     font-size: 20px;
+    line-height: 20px;
   }
 
   .footer {
