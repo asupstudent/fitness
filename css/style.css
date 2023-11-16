@@ -3987,6 +3987,10 @@ button,
     margin-bottom: 14px;
   }
 
+  .price-item__description--time {
+    color: #495a7d;
+  }
+
   .price-item__description {
     margin-bottom: 75px;
   }
