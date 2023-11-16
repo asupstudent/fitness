@@ -35,7 +35,7 @@
 }
 
 .about__text-block h2 {
-  margin: -5px 0 23px 0;
+  margin: -5px 0 29px 0;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -58,7 +58,7 @@
 }
 
 .about__text-block p {
-  margin: 0 0 89px 0;
+  margin: 0 0 94px 0;
   font-size: 22px;
   line-height: 22px;
 
@@ -100,10 +100,13 @@
 }
 
 .about__description-wrapper p {
-  margin: 0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  &:first-child,
+  &:last-child {
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   @include vp-1365 {
     &:last-child {
@@ -112,8 +115,10 @@
   }
 
   @include vp-767 {
-    font-size: 14px;
-    line-height: 22px;
+    &:first-child {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -324,6 +329,8 @@
   }
 
   @include vp-767 {
+    top: 49.5%;
+
     &::before {
       top: 0;
     }

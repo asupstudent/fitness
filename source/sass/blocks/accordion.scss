@@ -126,7 +126,7 @@
   }
 }
 
-.accordion_br-tablet {
+.accordion__br-tablet {
   display: none;
 
   @include vp-1365 {
@@ -134,7 +134,7 @@
   }
 }
 
-.accordion_br-mobile {
+.accordion__br-mobile {
   display: none;
 
   @include vp-767 {
