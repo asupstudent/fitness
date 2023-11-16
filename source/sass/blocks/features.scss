@@ -76,13 +76,13 @@
 
   &:first-child .features__item-title p {
     background: $gradient-digit-900;
-    color: transparent;
+    color: $color-transparent;
     background-clip: text;
   }
 
   &:last-child .features__item-title p {
     background: $gradient-digit-5-plus;
-    color: transparent;
+    color: $color-transparent;
     background-clip: text;
   }
 
@@ -230,7 +230,7 @@
   font-weight: 700;
   line-height: 70px;
   background: $gradient-digit-70-350;
-  color: transparent;
+  color: $color-transparent;
   background-clip: text;
 
   @include vp-767 {
