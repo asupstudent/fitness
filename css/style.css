@@ -1809,7 +1809,7 @@ button,
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: title;
-  padding: 0 0 50px 0;
+  padding: 0 0 49px 0;
   margin: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
@@ -1825,7 +1825,7 @@ button,
   -ms-grid-column: 1;
   grid-area: services-list;
   padding: 0;
-  margin: 12px 0 0 0;
+  margin: 13px 0 0 0;
   list-style: none;
   font-size: 14px;
   line-height: 22px;
@@ -1855,7 +1855,7 @@ button,
 }
 
 .about__text-block h2 {
-  margin: -5px 0 23px 0;
+  margin: -5px 0 29px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -1864,7 +1864,7 @@ button,
 }
 
 .about__text-block p {
-  margin: 0 0 89px 0;
+  margin: 0 0 94px 0;
   font-size: 22px;
   line-height: 22px;
 }
@@ -1880,7 +1880,8 @@ button,
   gap: 8px 0;
 }
 
-.about__description-wrapper p {
+.about__description-wrapper p:first-child,
+.about__description-wrapper p:last-child {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
@@ -3067,11 +3068,11 @@ button,
   text-transform: none;
 }
 
-.accordion_br-tablet {
+.accordion__br-tablet {
   display: none;
 }
 
-.accordion_br-mobile {
+.accordion__br-mobile {
   display: none;
 }
 
@@ -3813,7 +3814,8 @@ button,
   .hero__title {
     font-size: 72px;
     line-height: 85px;
-    padding-bottom: 49px;
+    padding-bottom: 50px;
+    letter-spacing: normal;
   }
 
   .hero__services-list {
@@ -4252,7 +4254,7 @@ button,
     line-height: 22px;
   }
 
-  .accordion_br-tablet {
+  .accordion__br-tablet {
     display: block;
   }
 
@@ -4507,7 +4509,7 @@ button,
   .main-nav .main-nav__contacts-link {
     font-size: 22px;
     line-height: 22px;
-    padding: 8px 12px;
+    padding: 8px 11px 8px 12px;
   }
 
   .hero {
@@ -4588,7 +4590,7 @@ button,
     margin: 0;
   }
 
-  .about__description-wrapper p {
+  .about__description-wrapper p:first-child {
     font-size: 14px;
     line-height: 22px;
   }
@@ -4629,6 +4631,10 @@ button,
 
   .about__video-player {
     aspect-ratio: 320/167;
+  }
+
+  .about__play-button {
+    top: 49.5%;
   }
 
   .about__play-button::before {
@@ -5113,7 +5119,7 @@ button,
     line-height: 20px;
   }
 
-  .accordion_br-mobile {
+  .accordion__br-mobile {
     display: block;
   }
 
