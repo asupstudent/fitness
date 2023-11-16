@@ -1352,7 +1352,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   -webkit-font-smoothing: antialiased;
@@ -1634,7 +1634,7 @@ button,
 
 .custom-input .is-invalid {
   font-size: 14px;
-  line-height: 1.57;
+  line-height: 22px;
   color: #d10a42;
 }
 
@@ -2652,7 +2652,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
 }
 
@@ -3382,7 +3382,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
 }
 
@@ -3947,7 +3947,7 @@ button,
   .price__control {
     padding: 18px 10px 12px;
     font-size: 18px;
-    line-height: 1;
+    line-height: 18px;
   }
 
   .price__control::before {
@@ -4119,6 +4119,7 @@ button,
 
   .features__title {
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 49px;
   }
@@ -4355,6 +4356,7 @@ button,
   .feedback__title {
     margin: 0 0 23px 0;
     font-size: 42px;
+    line-height: 42px;
     letter-spacing: 1.26px;
   }
 
@@ -4677,6 +4679,7 @@ button,
   .price__control {
     padding: 20px 15px 12px;
     font-size: 16px;
+    line-height: 16px;
   }
 
   .price__control::before {
@@ -4913,6 +4916,7 @@ button,
 
   .features__title {
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 55px;
     padding: 0 15px;
@@ -5271,6 +5275,7 @@ button,
   .feedback__title {
     margin: 0;
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 29px;
   }
