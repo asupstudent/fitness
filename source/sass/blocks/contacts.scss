@@ -38,7 +38,7 @@
     margin-bottom: 36px;
     font-size: 42px;
     font-weight: 700;
-    line-height: normal;
+    line-height: 42px;
     letter-spacing: 1.26px;
   }
 
@@ -145,10 +145,12 @@
 
   @include vp-1365 {
     font-size: 22px;
+    line-height: 22px;
     margin-bottom: 8px;
   }
 
   @include vp-767 {
     font-size: 20px;
+    line-height: 20px;
   }
 }

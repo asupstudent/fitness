@@ -32,9 +32,8 @@
     padding: 7px 10px 13px;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1;
+    line-height: 26px;
     color: $color-default-white;
-    letter-spacing: 0.2px;
 
     &::before {
       position: absolute;
@@ -49,12 +48,13 @@
 
     @include vp-1365 {
       font-size: 24px;
+      line-height: 24px;
       padding: 6px 9px 11px 14px;
-      letter-spacing: 0;
     }
 
     @include vp-767 {
       font-size: 22px;
+      line-height: 22px;
       padding: 8px 12px;
     }
 

@@ -129,7 +129,7 @@
       margin: 50px 0 12px 2px;
       font-size: 70px;
       font-weight: 700;
-      line-height: 1;
+      line-height: 70px;
 
       @include vp-1365 {
         margin: 0 1px 25px 0;
@@ -139,22 +139,25 @@
         margin-top: 1px;
         margin-bottom: 5px;
         font-size: 64px;
+        line-height: 64px;
       }
     }
 
     & div {
       font-size: 26px;
       font-weight: 700;
-      line-height: 1;
+      line-height: 26px;
       margin-bottom: 35px;
 
       @include vp-1365 {
         font-size: 24px;
+        line-height: 24px;
         margin-bottom: 25px;
       }
 
       @include vp-767 {
         font-size: 22px;
+        line-height: 22px;
         margin-bottom: 20px;
       }
     }
@@ -163,12 +166,12 @@
       margin: 0;
       font-size: 16px;
       font-weight: 400;
-      line-height: 1.5;
+      line-height: 24px;
 
       @include vp-767 {
         font-size: 14px;
         font-weight: 300;
-        line-height: 1.57;
+        line-height: 22px;
       }
     }
 
@@ -225,19 +228,20 @@
   margin: 0;
   font-size: 70px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 70px;
   background: $gradient-digit-70-350;
   color: transparent;
   background-clip: text;
 
   @include vp-767 {
     font-size: 64px;
+    line-height: 64px;
   }
 }
 
 .features__item-title div {
-  line-height: 1.57;
   font-size: 14px;
+  line-height: 22px;
   margin-top: 1px;
   color: $color-persian-blue;
 
@@ -246,7 +250,7 @@
   }
 
   @include vp-767 {
-    line-height: 1.42;
+    line-height: 20px;
     margin-top: 0;
   }
 }
@@ -256,17 +260,17 @@
   padding-top: 1px;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 22px;
 
   @include vp-1365 {
     font-size: 20px;
+    line-height: 20px;
     padding-left: 1px;
     padding-top: 0;
   }
 
   @include vp-767 {
     font-size: 18px;
-    line-height: 1.11;
   }
 }
 
@@ -274,7 +278,7 @@
   margin: 0;
   padding-top: 7px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 24px;
 
   @include vp-1365 {
     padding-top: 12px;
@@ -282,7 +286,7 @@
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 1.57;
+    line-height: 22px;
     padding-top: 13px;
   }
 }

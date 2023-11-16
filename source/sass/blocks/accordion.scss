@@ -7,8 +7,12 @@
 .accordion__element {
   border-top: 1px solid $color-resolution-blue-20;
 
+  &.is-active {
+    margin-bottom: 2px;
+  }
+
   &.is-active .accordion__container {
-    padding-bottom: 14px;
+    padding-bottom: 12px;
   }
 
   &.is-active .accordion__button {
@@ -39,12 +43,16 @@
   }
 
   @include vp-1365 {
+    &.is-active {
+      margin-bottom: 0;
+    }
+
     &.is-active .accordion__container {
-      padding-bottom: 9px;
+      padding-bottom: 10px;
     }
 
     &:first-child .accordion__wrapper {
-      padding-bottom: 25px;
+      padding-bottom: 24px;
     }
 
     &:last-child .accordion__container {
@@ -118,10 +126,18 @@
   }
 }
 
-.accordion_br {
+.accordion_br-tablet {
   display: none;
 
   @include vp-1365 {
+    display: block;
+  }
+}
+
+.accordion_br-mobile {
+  display: none;
+
+  @include vp-767 {
     display: block;
   }
 }
