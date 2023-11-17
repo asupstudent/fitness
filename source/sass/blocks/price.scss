@@ -1,7 +1,7 @@
 .price {
   position: relative;
   background-color: $color-ghost-white;
-  overflow-x: hidden;
+  z-index: 1;
 }
 
 .price .container {
@@ -27,15 +27,16 @@
 
 .price__image {
   position: absolute;
-  width: 380px;
-  height: 330px;
-  right: -138px;
-  bottom: 0;
+  right: 0;
+  bottom: -150px;
+  z-index: -1;
+  width: 287px;
+  height: 494px;
 
   @include vp-1365 {
-    width: 326px;
-    height: 284px;
-    right: -38px;
+    width: 327px;
+    height: 423px;
+    bottom: -149px;
   }
 
   @include vp-767 {
@@ -58,7 +59,7 @@
 }
 
 .price__title {
-  margin: 0 0 12px 0;
+  margin: 0 0 17px 0;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -69,7 +70,7 @@
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 19px;
+    margin-bottom: 18px;
   }
 
   @include vp-767 {
@@ -101,18 +102,18 @@
   }
 
   @include vp-1365 {
-    gap: 36px;
-    margin-bottom: 45px;
+    gap: 35px;
+    margin-bottom: 46px;
 
     &::before {
-      bottom: -1px;
+      bottom: -2px;
       width: calc(100% - 20px);
       left: 10px;
     }
   }
 
   @include vp-767 {
-    gap: 14px;
+    gap: 16px;
     margin-bottom: 39px;
     justify-content: center;
 
@@ -126,7 +127,7 @@
 
 .price__control {
   position: relative;
-  padding: 17px 20px 11px;
+  padding: 17px 20px 16px;
   display: inline-block;
   color: $color-sapphire-50;
   font-size: 20px;
@@ -175,7 +176,7 @@
     line-height: 18px;
 
     &::before {
-      bottom: -1px;
+      bottom: -2px;
       width: calc(100% - 19px);
       left: 10px;
     }
