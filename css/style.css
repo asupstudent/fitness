@@ -2121,7 +2121,7 @@ button,
 .price {
   position: relative;
   background-color: #f8f9fc;
-  overflow-x: hidden;
+  z-index: 1;
 }
 
 .price__wrapper {
@@ -2133,10 +2133,11 @@ button,
 
 .price__image {
   position: absolute;
-  width: 380px;
-  height: 330px;
-  right: -138px;
-  bottom: 0;
+  right: 0;
+  bottom: -150px;
+  z-index: -1;
+  width: 287px;
+  height: 494px;
 }
 
 .price__spacer {
@@ -2146,7 +2147,7 @@ button,
 }
 
 .price__title {
-  margin: 0 0 12px 0;
+  margin: 0 0 17px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -2183,7 +2184,7 @@ button,
 
 .price__control {
   position: relative;
-  padding: 17px 20px 11px;
+  padding: 17px 20px 16px;
   display: inline-block;
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
@@ -2265,7 +2266,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   width: 360px;
-  padding: 58px 20px 60px;
+  padding: 60px 20px 60px;
   border: 7px solid #ffffff;
   background-color: #ffffff;
   z-index: 5;
@@ -2295,25 +2296,25 @@ button,
 .price-item:hover:not(:nth-child(2)) .price-item__price,
 .price-item:focus:not(:nth-child(2)) .price-item__price,
 .price-item.is-active .price-item__price {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .price-item__title {
-  margin: 0 0 4px 0;
+  margin: 0 0 7px 0;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
 }
 
 .price-item__description {
-  margin: 0 0 69px 0;
+  margin: 0 0 68px 0;
   font-weight: 300;
   line-height: 24px;
 }
 
 .price-item__price {
   position: relative;
-  margin: 0 0 36px 0;
+  margin: 0 0 37px 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 90px;
@@ -2356,7 +2357,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 51px 0 107px 0;
+  padding: 120px 0 107px 0;
 }
 
 .games__content-wrapper {
@@ -3745,6 +3746,10 @@ button,
     padding: 20px;
   }
 
+  .btn--price-another-border {
+    outline: 2px solid #1c3374;
+  }
+
   .btn--games {
     border: 2px solid #ffffff;
     padding: 20px 12px 20px;
@@ -3919,9 +3924,9 @@ button,
   }
 
   .price__image {
-    width: 326px;
-    height: 284px;
-    right: -38px;
+    width: 327px;
+    height: 423px;
+    bottom: -149px;
   }
 
   .price__spacer {
@@ -3932,16 +3937,16 @@ button,
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 19px;
+    margin-bottom: 18px;
   }
 
   .price__controls-list {
-    gap: 36px;
-    margin-bottom: 45px;
+    gap: 35px;
+    margin-bottom: 46px;
   }
 
   .price__controls-list::before {
-    bottom: -1px;
+    bottom: -2px;
     width: calc(100% - 20px);
     left: 10px;
   }
@@ -3953,7 +3958,7 @@ button,
   }
 
   .price__control::before {
-    bottom: -1px;
+    bottom: -2px;
     width: calc(100% - 19px);
     left: 10px;
   }
@@ -3970,10 +3975,17 @@ button,
     padding-top: 60px;
   }
 
+  .price-item:hover:not(:nth-child(2)),
+  .price-item:focus:not(:nth-child(2)),
+  .price-item.is-active {
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
+
   .price-item:hover:not(:nth-child(2)) .price-item__price,
   .price-item:focus:not(:nth-child(2)) .price-item__price,
   .price-item.is-active .price-item__price {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .price-item:hover:not(:nth-child(2)) .btn--price:not([disabled]),
@@ -3981,6 +3993,18 @@ button,
   .price-item.is-active .btn--price:not([disabled]) {
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+
+  .price-item:last-child {
+    padding-top: 58px;
+  }
+
+  .price-item:last-child .price-item__title {
+    margin-bottom: 18px;
+  }
+
+  .price-item:last-child .price-item__description {
+    margin-bottom: 72px;
   }
 
   .price-item__title {
@@ -3994,11 +4018,11 @@ button,
   }
 
   .price-item__description {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
   }
 
   .price-item__price {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   .games__wrapper {
@@ -4476,6 +4500,10 @@ button,
     padding: 0 15px;
   }
 
+  .btn--price-another-border {
+    outline: 2px solid #102654;
+  }
+
   .btn--games {
     padding-bottom: 20px;
   }
@@ -4669,7 +4697,7 @@ button,
   }
 
   .price__controls-list {
-    gap: 14px;
+    gap: 16px;
     margin-bottom: 39px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -4708,6 +4736,7 @@ button,
   .price-item:hover:not(:nth-child(2)),
   .price-item:focus:not(:nth-child(2)),
   .price-item.is-active {
+    padding-top: 45px;
     padding-bottom: 43px;
   }
 
@@ -4715,6 +4744,18 @@ button,
   .price-item:focus:not(:nth-child(2)) .price-item__price,
   .price-item.is-active .price-item__price {
     margin-bottom: 22px;
+  }
+
+  .price-item:last-child {
+    padding-top: 44px;
+  }
+
+  .price-item:last-child .price-item__title:last-child {
+    margin-bottom: 7px;
+  }
+
+  .price-item:last-child .price-item__description {
+    margin-bottom: 61px;
   }
 
   .price-item__title {
