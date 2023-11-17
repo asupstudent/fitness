@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 360px;
-  padding: 60px 20px 60px;
+  padding: 60px 20px 58px;
   border: 7px solid $color-default-white;
   background-color: $color-default-white;
   z-index: 5;
@@ -18,7 +18,7 @@
     & .btn--price:not([disabled]) {
       color: $color-default-white;
       background: $gradient-button;
-      outline-color: transparent;
+      border: none;
       max-width: 205px;
       padding-top: 27px;
       padding-bottom: 27px;
@@ -49,15 +49,33 @@
       }
     }
 
-    &:last-child {
-      padding-top: 58px;
+    &--full {
+      padding: 58px 20px;
+
+      &:hover:not(:nth-child(2)),
+      &:focus:not(:nth-child(2)),
+      &.is-active {
+        padding-top: 58px;
+      }
+    }
+
+    &--full .price-item__title {
+      margin-bottom: 18px;
+    }
+
+    &--full .price-item__description {
+      margin-bottom: 72px;
+
+      @include vp-767 {
+        margin-bottom: 59px;
+      }
     }
   }
 
   @include vp-767 {
     width: 290px;
     padding-top: 45px;
-    padding-bottom: 45px;
+    padding-bottom: 43px;
 
     &:hover:not(:nth-child(2)),
     &:focus:not(:nth-child(2)),
@@ -66,35 +84,9 @@
       padding-bottom: 43px;
 
       & .price-item__price {
-        margin-bottom: 22px;
+        margin-bottom: 23px;
       }
     }
-
-    &:last-child {
-      padding-top: 44px;
-    }
-  }
-}
-
-.price-item:last-child .price-item__title {
-  @include vp-1365 {
-    margin-bottom: 18px;
-  }
-
-  @include vp-767 {
-    &:last-child {
-      margin-bottom: 7px;
-    }
-  }
-}
-
-.price-item:last-child .price-item__description {
-  @include vp-1365 {
-    margin-bottom: 72px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 61px;
   }
 }
 
@@ -134,13 +126,13 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 64px;
+    margin-bottom: 63px;
   }
 }
 
 .price-item__price {
   position: relative;
-  margin: 0 0 37px 0;
+  margin: 0 0 35px 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 90px;
@@ -161,11 +153,11 @@
   }
 
   @include vp-1365 {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   @include vp-767 {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     font-size: 48px;
     line-height: 72px;
 
@@ -193,5 +185,5 @@
 }
 
 .price-item__button {
-  max-width: 201px;
+  max-width: 205px;
 }

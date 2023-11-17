@@ -21,11 +21,13 @@ const initSliderJury = () => {
         },
 
         768: {
+          initialSlide: 2,
           slidesPerView: 2,
           spaceBetween: 32,
         },
 
         320: {
+          initialSlide: 2,
           slidesPerView: 1,
           spaceBetween: 20,
         },

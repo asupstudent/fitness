@@ -37,8 +37,7 @@
 
   &--price {
     padding: 25px;
-    border: none;
-    outline: 2px solid $color-sapphire;
+    border: 2px solid $color-sapphire;
     color: $color-sapphire;
     width: 100%;
 
@@ -59,11 +58,7 @@
 
   &--price-another-border {
     @include vp-1365 {
-      outline: 2px solid $color-resolution-blue;
-    }
-
-    @include vp-767 {
-      outline: 2px solid $color-sapphire;
+      border: 2px solid $color-resolution-blue;
     }
   }
 

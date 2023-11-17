@@ -7,7 +7,7 @@
 
   @include vp-1365 {
     max-width: 678px;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -25,21 +25,21 @@
 
   @include vp-1365 {
     max-width: 292px;
-    padding: 41px 45px 45px;
+    padding: 40px 45px 45px;
   }
 
   @include vp-767 {
     width: 100%;
     max-width: 100%;
-    padding: 41px 40px 40px;
+    padding: 40px;
   }
 }
 
 .games__main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 11px 69px;
-  margin: 0 0 7px 0;
+  gap: 21px 69px;
+  margin: 0 0 22px 0;
 
   @include vp-1365 {
     gap: 9px 42px;
@@ -49,8 +49,7 @@
   @include vp-767 {
     grid-template-columns: 1fr auto;
     gap: 7px 36px;
-    margin-bottom: 13px;
-    margin-left: 1px;
+    margin-bottom: 14px;
   }
 }
 
@@ -96,19 +95,20 @@
 
   @include vp-767 {
     position: relative;
-    justify-self: end;
+    justify-self: start;
     max-width: 56px;
-    margin-top: -1px;
-  }
-}
-
-.games__date {
-  @include vp-767 {
-    left: -1px;
   }
 }
 
 .games__time {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  @include vp-1365 {
+    gap: 0;
+  }
+
   @include vp-767 {
     left: -2px;
   }
@@ -133,7 +133,7 @@
 
   @include vp-1365 {
     &::after {
-      top: 23px;
+      top: 24px;
       width: 75%;
     }
   }
@@ -143,8 +143,9 @@
     line-height: 20px;
 
     &::after {
-      top: 19px;
-      width: 75%;
+      left: -1px;
+      top: 20px;
+      width: 100%;
     }
   }
 }
@@ -154,8 +155,16 @@
     width: 100%;
   }
 
+  @include vp-1365 {
+    &::after {
+      top: 23px;
+    }
+  }
+
   @include vp-767 {
     &::after {
+      left: 1px;
+      top: 20px;
       width: 101%;
     }
   }
@@ -176,10 +185,10 @@
 
 .games__date dd {
   display: flex;
-  margin-top: 3px;
+  margin-top: 13px;
 
   @include vp-1365 {
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   @include vp-767 {
@@ -200,8 +209,11 @@
   }
 }
 
-.games__date span {
-  margin-top: 11px;
+.games__month-year {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 5px;
   margin-left: 7px;
   font-size: 14px;
   line-height: 14px;
@@ -209,6 +221,7 @@
   max-width: 40px;
 
   @include vp-1365 {
+    gap: 0;
     font-size: 10px;
     line-height: 10px;
     margin-top: 2px;
