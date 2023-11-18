@@ -86,6 +86,10 @@
     &:last-child .accordion__button {
       top: 36%;
     }
+
+    &.is-active .accordion__button {
+      top: 33%;
+    }
   }
 }
 
@@ -184,24 +188,23 @@
   &::before {
     content: "";
     position: absolute;
-    top: 18px;
-    left: 9px;
-    background-color: $color-resolution-blue;
-    height: 1px;
+    top: 50%;
+    left: 50%;
     width: 20px;
-    display: block;
+    height: 1px;
+    background-color: $color-resolution-blue;
+    transform: translate(-50%, -50%);
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 18px;
-    left: 9px;
-    transform: rotate(90deg);
-    background-color: $color-resolution-blue;
-    height: 1px;
+    top: 50%;
+    left: 50%;
     width: 20px;
-    display: block;
+    height: 1px;
+    background-color: $color-resolution-blue;
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 
   &:hover,
@@ -227,8 +230,6 @@
     &::after {
       width: 14px;
       height: 1px;
-      top: 14px;
-      left: 7px;
     }
   }
 }
