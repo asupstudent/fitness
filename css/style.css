@@ -3119,26 +3119,27 @@ button,
 .accordion__button::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 9px;
-  background-color: #1c3374;
-  height: 1px;
+  top: 50%;
+  left: 50%;
   width: 20px;
-  display: block;
+  height: 1px;
+  background-color: #1c3374;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .accordion__button::after {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 9px;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  background-color: #1c3374;
-  height: 1px;
+  top: 50%;
+  left: 50%;
   width: 20px;
-  display: block;
+  height: 1px;
+  background-color: #1c3374;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .accordion__button:hover,
@@ -3159,7 +3160,7 @@ button,
 
 .faq__wrapper {
   max-width: 1160px;
-  padding: 120px 0 119px;
+  padding: 120px 0 120px;
   margin: 0 auto;
 }
 
@@ -3414,7 +3415,7 @@ button,
 
 .form input {
   display: block;
-  padding: 10px 10px 3px 3px;
+  padding: 10px 10px 3px 0;
   width: 100%;
   border: 1px solid transparent;
   border-bottom: 1px solid #74819c;
@@ -3581,7 +3582,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 21px;
   padding: 0;
   margin: -10px 25px 0 0;
   min-width: 452px;
@@ -3643,7 +3644,7 @@ button,
   flex-wrap: wrap;
   gap: 10px;
   padding: 0;
-  margin: 0 10px 11px 0;
+  margin: 0 10px 12px 0;
   max-width: 195px;
 }
 
@@ -4435,11 +4436,11 @@ button,
   .contacts__wrapper {
     max-width: 502px;
     margin: 0 auto;
-    padding: 100px 0 73px;
+    padding: 105px 0 72px;
   }
 
   .contacts__title {
-    margin-bottom: 36px;
+    margin-bottom: 41px;
     font-size: 42px;
     font-weight: 700;
     line-height: 42px;
@@ -4453,17 +4454,17 @@ button,
   }
 
   .contacts__list--left .contacts__item h3 {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   .contacts__item {
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 
   .contacts__item h3 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 
   .footer {
@@ -4964,27 +4965,27 @@ button,
   }
 
   .features__wrapper {
-    padding: 71px 0 69px;
+    padding: 71px 0 49px;
   }
 
   .features__title {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     padding: 0 15px;
   }
 
   .features__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 34px;
     text-align: center;
   }
 
   .features__item--decorated p {
     margin-top: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 64px;
     line-height: 64px;
   }
@@ -5011,18 +5012,23 @@ button,
     width: 100%;
     margin-top: 1px;
     margin-bottom: 7px;
-    padding: 30px 46px 39px;
+    padding: 29px 46px 39px;
   }
 
   .features__item:not(.features__item--decorated) {
     gap: 11px;
     padding: 0 55px;
-    margin-left: 2px;
+    margin-left: -1px;
   }
 
   .features__item:not(.features__item--decorated):nth-child(2) .features__item-text p,
   .features__item:not(.features__item--decorated):nth-child(4) .features__item-text p {
-    padding-top: 7px;
+    padding-top: 13px;
+  }
+
+  .features__item:not(.features__item--decorated):nth-child(2),
+  .features__item:not(.features__item--decorated):nth-child(4) {
+    margin-bottom: 4px;
   }
 
   .features__item:not(.features__item--decorated):last-child {
@@ -5044,7 +5050,7 @@ button,
 
   .features__item-title div {
     line-height: 20px;
-    margin-top: 0;
+    margin-top: 1px;
   }
 
   .features__item-text h3 {
@@ -5156,6 +5162,10 @@ button,
     top: 36%;
   }
 
+  .accordion__element.is-active .accordion__button {
+    top: 33%;
+  }
+
   .accordion__container {
     padding-top: 22px;
     padding-bottom: 21px;
@@ -5189,8 +5199,6 @@ button,
   .accordion__button::after {
     width: 14px;
     height: 1px;
-    top: 14px;
-    left: 7px;
   }
 
   .faq__wrapper {
@@ -5351,12 +5359,12 @@ button,
 
   .contacts__wrapper {
     margin: 0;
-    padding: 67px 15px 42px;
+    padding: 67px 15px 40px;
     max-width: 100vw;
   }
 
   .contacts__title {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     font-size: 32px;
     font-weight: 600;
     line-height: 32px;
@@ -5380,16 +5388,17 @@ button,
   }
 
   .contacts__list--left .contacts__item h3 {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
 
   .contacts__item {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .contacts__item h3 {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 10px;
   }
 
   .footer {
@@ -5409,7 +5418,7 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 11px;
-    padding: 19px 0 46px 0;
+    padding: 19px 0 45px 0;
   }
 
   .footer__logo {
