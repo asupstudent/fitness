@@ -2694,14 +2694,14 @@ button,
 
 .features__item:first-child .features__item-title p {
   background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
-  color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .features__item:last-child .features__item-title p {
   background: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
-  color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -2772,7 +2772,7 @@ button,
   font-weight: 700;
   line-height: 70px;
   background: linear-gradient(142deg, #d10a42 0%, #0041ca 88.2%);
-  color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
