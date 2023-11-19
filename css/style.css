@@ -1642,8 +1642,8 @@ button,
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, right top, from(#1c3477), color-stop(0.01%, #1c3477), color-stop(39.11%, #1a3578), color-stop(75.5%, #73184b), to(#b4022a));
-  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1c3477), color-stop(0.01%, #1c3477), color-stop(39.11%, #1a3578), color-stop(75.5%, #73184b), to(#b4022a)) #1c3374;
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%) #1c3374;
   color: #ffffff;
   padding-bottom: 120px;
 }
@@ -1680,6 +1680,10 @@ button,
   display: flex;
   margin-top: 50px;
   background-color: #1c3374;
+}
+
+.logo img {
+  height: revert-layer;
 }
 
 .main-nav {
@@ -1897,6 +1901,12 @@ button,
 .about__image {
   width: 100%;
   background-color: rgba(16, 38, 84, 0.2);
+}
+
+.about__image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: revert-layer;
 }
 
 .about__video {
@@ -2153,6 +2163,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 11px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -2160,6 +2172,9 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   margin: 0 auto 33px;
   padding: 0;
   list-style: none;
@@ -2279,7 +2294,7 @@ button,
 .price-item:focus:not(:nth-child(2)) .btn--price:not([disabled]),
 .price-item.is-active .btn--price:not([disabled]) {
   color: #ffffff;
-  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%) #1c3374;
   border: none;
   max-width: 205px;
   padding-top: 27px;
@@ -2475,6 +2490,12 @@ button,
 .games__image-wrapper {
   width: 100%;
   background-color: rgba(20, 54, 122, 0.5);
+}
+
+.games__image-wrapper img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: revert-layer;
 }
 
 .jury__wrapper {
@@ -2693,14 +2714,14 @@ button,
 }
 
 .features__item:first-child .features__item-title p {
-  background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%) #1c3374;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .features__item:last-child .features__item-title p {
-  background: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
+  background: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%) #1c3374;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -2742,7 +2763,6 @@ button,
   background-color: #1c3374;
   color: #ffffff;
   margin-top: 4px;
-  max-height: 340px;
 }
 
 .features__item--decorated p {
@@ -2771,7 +2791,7 @@ button,
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
-  background: linear-gradient(142deg, #d10a42 0%, #0041ca 88.2%);
+  background: linear-gradient(142deg, #d10a42 0%, #0041ca 88.2%) #1c3374;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -2844,6 +2864,7 @@ button,
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
+  word-break: break-all;
 }
 
 .promo__item--primary span {
@@ -2851,6 +2872,7 @@ button,
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
+  word-break: break-all;
 }
 
 .promo__item--primary p {
@@ -2861,6 +2883,7 @@ button,
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
+  word-break: break-all;
 }
 
 .promo__item--primary a {
@@ -2946,14 +2969,14 @@ button,
 }
 
 .promo__item-image {
+  width: 100%;
   background-color: rgba(20, 54, 122, 0.5);
 }
 
 .promo__item-image img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: revert-layer;
 }
 
 .promo__item-link {
@@ -2962,6 +2985,8 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  max-width: 190px;
+  word-break: break-all;
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
@@ -3209,7 +3234,7 @@ button,
 
 .faq__control.is-active {
   color: #ffffff;
-  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%) #1c3374;
   padding: 20px 18px 16px;
   border: none;
 }
@@ -3266,8 +3291,8 @@ button,
   display: grid;
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
-  -ms-grid-rows: 22px auto;
-  grid-template-rows: 22px auto;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
   gap: 20px 30px;
   margin: 0 auto;
   padding: 61px 55px 60px 62px;
@@ -3552,7 +3577,7 @@ button,
   align-items: center;
   margin: 0 auto;
   color: #ffffff;
-  padding: 33px 0 21px;
+  padding: 33px 0 28px;
   max-width: 1180px;
 }
 
@@ -3571,9 +3596,15 @@ button,
 }
 
 .footer__logo {
-  min-width: 129px;
   width: 129px;
+  height: 44px;
   margin-left: 1px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.footer__logo img {
+  height: revert-layer;
 }
 
 .footer__navigation {
@@ -3584,7 +3615,7 @@ button,
   flex-wrap: wrap;
   gap: 21px;
   padding: 0;
-  margin: -10px 25px 0 0;
+  margin: -2px 25px 0 0;
   min-width: 452px;
 }
 
@@ -3644,7 +3675,7 @@ button,
   flex-wrap: wrap;
   gap: 10px;
   padding: 0;
-  margin: 0 10px 12px 0;
+  margin: 0 10px 5px 0;
   max-width: 195px;
 }
 
@@ -4437,23 +4468,23 @@ button,
   .footer__wrapper {
     gap: 22px;
     padding-top: 39px;
-    padding-bottom: 27px;
+    padding-bottom: 34px;
   }
 
   .footer__logo {
-    min-width: 120px;
     width: 120px;
+    height: 42px;
   }
 
   .footer__navigation {
     gap: 10px;
-    margin: -10px 0 0 0;
+    margin: -4px 0 0 0;
     min-width: 426px;
   }
 
   .footer__social-list {
     max-width: 130px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 }
 
@@ -4620,7 +4651,6 @@ button,
 
   .about__image img {
     width: 100%;
-    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     max-height: 313px;
@@ -4831,7 +4861,6 @@ button,
 
   .games__image-wrapper img {
     width: 100%;
-    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     max-height: 292px;
@@ -5098,6 +5127,13 @@ button,
     padding-top: 46px;
     padding-bottom: 40px;
     text-align: center;
+  }
+
+  .promo__item-image img {
+    background-color: #ffffff;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
   }
 
   .accordion__element:first-child .accordion__container {
@@ -5377,16 +5413,17 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 11px;
-    padding: 19px 0 45px 0;
+    padding: 17px 0 45px 0;
   }
 
   .footer__logo {
-    min-width: 110px;
     width: 110px;
+    height: 35px;
   }
 
   .footer__navigation {
     min-width: 310px;
+    margin-top: 4px;
     gap: 2px 15px;
   }
 
