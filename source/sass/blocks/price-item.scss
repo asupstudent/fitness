@@ -17,7 +17,7 @@
 
     & .btn--price:not([disabled]) {
       color: $color-default-white;
-      background: $gradient-button;
+      background: $gradient-button $color-resolution-blue;
       border: none;
       max-width: 205px;
       padding-top: 27px;

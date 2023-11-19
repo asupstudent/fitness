@@ -97,7 +97,7 @@
 
   &.is-active {
     color: $color-default-white;
-    background: $gradient-button;
+    background: $gradient-button $color-resolution-blue;
     padding: 20px 18px 16px;
     border: none;
   }

@@ -70,9 +70,11 @@
 .price__controls-list {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 11px;
   justify-content: space-between;
   width: max-content;
+  max-width: fit-content;
   margin: 0 auto 33px;
   padding: 0;
   list-style: none;

@@ -64,6 +64,7 @@
       font-size: 26px;
       font-weight: 700;
       line-height: 26px;
+      word-break: break-all;
 
       @include vp-1365 {
         font-size: 24px;
@@ -83,6 +84,7 @@
       font-size: 70px;
       font-weight: 700;
       line-height: 70px;
+      word-break: break-all;
 
       @include vp-1365 {
         margin-bottom: 20px;
@@ -101,6 +103,7 @@
       font-size: 18px;
       line-height: 24px;
       font-weight: 300;
+      word-break: break-all;
 
       @include vp-767 {
         font-size: 16px;
@@ -231,19 +234,27 @@
 }
 
 .promo__item-image {
+  width: 100%;
   background-color: $color-dark-cerulean-50;
 }
 
 .promo__item-image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  object-fit: contain;
+  height: revert-layer;
+
+  @include vp-767 {
+    background-color: $color-default-white;
+    object-fit: contain;
+    width: 100%;
+  }
 }
 
 .promo__item-link {
   font-size: 14px;
   position: relative;
   width: max-content;
+  max-width: 190px;
+  word-break: break-all;
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;

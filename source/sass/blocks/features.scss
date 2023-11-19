@@ -77,13 +77,13 @@
   min-height: 114px;
 
   &:first-child .features__item-title p {
-    background: $gradient-digit-900;
+    background: $gradient-digit-900 $color-resolution-blue;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   &:last-child .features__item-title p {
-    background: $gradient-digit-5-plus;
+    background: $gradient-digit-5-plus $color-resolution-blue;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
@@ -125,7 +125,6 @@
     background-color: $color-resolution-blue;
     color: $color-default-white;
     margin-top: 4px;
-    max-height: 340px;
 
     & p {
       margin: 50px 0 12px 2px;
@@ -236,7 +235,7 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
-  background: $gradient-digit-70-350;
+  background: $gradient-digit-70-350 $color-resolution-blue;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
