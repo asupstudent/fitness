@@ -236,16 +236,16 @@
 .promo__item-image {
   width: 100%;
   background-color: $color-dark-cerulean-50;
-}
 
-.promo__item-image img {
-  object-fit: contain;
-  height: revert-layer;
-
-  @include vp-767 {
-    background-color: $color-default-white;
+  img {
     object-fit: contain;
-    width: 100%;
+    height: revert-layer;
+
+    @include vp-767 {
+      background-color: $color-default-white;
+      object-fit: contain;
+      width: 100%;
+    }
   }
 }
 

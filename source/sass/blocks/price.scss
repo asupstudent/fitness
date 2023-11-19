@@ -2,11 +2,11 @@
   position: relative;
   background-color: $color-ghost-white;
   z-index: 1;
-}
 
-.price .container {
-  @include vp-767 {
-    padding: 0;
+  .container {
+    @include vp-767 {
+      padding: 0;
+    }
   }
 }
 

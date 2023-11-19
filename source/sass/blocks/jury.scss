@@ -61,29 +61,30 @@
   color: $color-default-white;
   background-color: $color-sapphire-89;
 
-  &:hover h3,
-  &:focus h3 {
-    display: none;
+  &:hover,
+  &:focus {
+    h3 {
+      display: none;
+    }
+
+    .jury-information {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
-  &:hover .jury-information,
-  &:focus .jury-information {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-.jury__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    @include vp-1365 {
+      max-height: 588px;
+    }
 
-  @include vp-1365 {
-    max-height: 588px;
-  }
-
-  @include vp-767 {
-    max-height: 548px;
+    @include vp-767 {
+      max-height: 548px;
+    }
   }
 }
 
@@ -137,6 +138,14 @@
   &:not([disabled]):active {
     border-radius: 50%;
     background-color: $color-sapphire;
+
+    svg {
+      color: $color-default-white;
+
+      @include vp-767 {
+        color: $color-sapphire;
+      }
+    }
   }
 
   &[disabled] {
@@ -164,6 +173,17 @@
     }
   }
 
+  svg {
+    color: $color-sapphire;
+    position: absolute;
+    transform: translate(-50%, 50%);
+
+    @include vp-767 {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
   &--prev {
     top: 44.2%;
     left: -72px;
@@ -176,6 +196,16 @@
     @include vp-767 {
       top: 47.5%;
       left: -3px;
+    }
+
+    svg {
+      left: 24px;
+      top: -7px;
+
+      @include vp-767 {
+        left: 11px;
+        top: 0;
+      }
     }
   }
 
@@ -193,44 +223,15 @@
       right: -2px;
       top: 47.5%;
     }
-  }
-}
 
-.jury__button:not([disabled]):active svg {
-  color: $color-default-white;
+    svg {
+      right: 12px;
+      top: -7px;
 
-  @include vp-767 {
-    color: $color-sapphire;
-  }
-}
-
-.jury__button--prev svg {
-  left: 24px;
-  top: -7px;
-
-  @include vp-767 {
-    left: 11px;
-    top: 0;
-  }
-}
-
-.jury__button--next svg {
-  right: 12px;
-  top: -7px;
-
-  @include vp-767 {
-    right: 10px;
-    top: 2px;
-  }
-}
-
-.jury__button svg {
-  color: $color-sapphire;
-  position: absolute;
-  transform: translate(-50%, 50%);
-
-  @include vp-767 {
-    width: 10px;
-    height: 19px;
+      @include vp-767 {
+        right: 10px;
+        top: 2px;
+      }
+    }
   }
 }

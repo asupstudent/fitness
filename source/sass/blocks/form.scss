@@ -4,6 +4,58 @@
   @include vp-1365 {
     max-width: 100%;
   }
+
+  input {
+    display: block;
+    padding: 10px 10px 3px 0;
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $color-light-slate-grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $color-default-white;
+    background-color: transparent;
+
+
+    &::-moz-placeholder {
+      color: $color-default-white;
+      padding-left: 0;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-default-white;
+      padding-left: 0;
+    }
+
+    &:hover {
+      outline: none;
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 1px solid $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @include vp-1365 {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
 }
 
 .form__inputs {
@@ -18,58 +70,6 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-}
-
-.form input {
-  display: block;
-  padding: 10px 10px 3px 0;
-  width: 100%;
-  border: 1px solid transparent;
-  border-bottom: 1px solid $color-light-slate-grey;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: $color-default-white;
-  background-color: transparent;
-
-
-  &::-moz-placeholder {
-    color: $color-default-white;
-    padding-left: 0;
-  }
-
-  &::-webkit-input-placeholder {
-    color: $color-default-white;
-    padding-left: 0;
-  }
-
-  &:hover {
-    outline: none;
-    border-bottom: 1px solid $color-default-white;
-  }
-
-  &:focus,
-  &:active {
-    outline: none;
-    border: 1px solid $color-default-white;
-  }
-
-  &:disabled {
-    opacity: 0.4;
-    pointer-events: none;
-    cursor: default;
-  }
-
-  @include vp-1365 {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-  }
-
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 22px;
   }
 }
 

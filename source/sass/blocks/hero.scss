@@ -59,11 +59,11 @@
   @include vp-767 {
     display: none;
   }
-}
 
-.hero__image img {
-  max-height: 100%;
-  object-fit: contain;
+  img {
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
 
 .hero__city {
