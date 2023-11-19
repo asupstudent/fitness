@@ -59,7 +59,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row: span 2;
 
-    & h3 {
+    h3 {
       margin: 0 0 15px 0;
       font-size: 26px;
       font-weight: 700;
@@ -79,7 +79,7 @@
       }
     }
 
-    & span {
+    span {
       margin-bottom: 25px;
       font-size: 70px;
       font-weight: 700;
@@ -97,7 +97,7 @@
       }
     }
 
-    & p {
+    p {
       flex-grow: 1;
       margin: 0;
       font-size: 18px;
@@ -112,7 +112,7 @@
       }
     }
 
-    & a {
+    a {
       color: inherit;
 
       &::after {
@@ -155,7 +155,7 @@
     border-image: $gradient-border-tickets-promo;
     border-image-slice: 1;
 
-    & h3 {
+    h3 {
       margin: 0 0 10px 0;
       font-size: 26px;
       font-weight: 700;
@@ -173,7 +173,7 @@
       }
     }
 
-    & p {
+    p {
       margin: 0;
       flex-grow: 1;
       font-weight: 300;
@@ -186,7 +186,7 @@
       }
     }
 
-    & a {
+    a {
       color: $color-resolution-blue;
 
       &::after {

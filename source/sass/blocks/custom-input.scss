@@ -1,20 +1,22 @@
 .custom-input {
   position: relative;
   margin-left: -1px;
+
+  .input-message {
+    position: absolute;
+    top: 39px;
+    left: 0;
+  }
+
+  .is-invalid {
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-crimson;
+  }
 }
 
-.custom-input .input-message {
-  position: absolute;
-  top: 39px;
-  left: 0;
-}
-
-.custom-input .is-invalid {
-  font-size: 14px;
-  line-height: 22px;
-  color: $color-crimson;
-}
-
-.custom-input.is-invalid input {
-  border-bottom: 1px solid $color-crimson;
+.custom-input.is-invalid {
+  input {
+    border-bottom: 1px solid $color-crimson;
+  }
 }

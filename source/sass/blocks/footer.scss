@@ -45,20 +45,20 @@
     gap: 11px;
     padding: 17px 0 45px;
   }
-}
 
-.footer__wrapper ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
+  }
 
-.footer__wrapper a {
-  display: inline-block;
-  padding: 10px;
-  color: $color-default-white;
-}
+  a {
+    display: inline-block;
+    padding: 10px;
+    color: $color-default-white;
+  }
 
-.footer__wrapper .footer__social-link {
-  padding: 0;
+  .footer__social-link {
+    padding: 0;
+  }
 }
 
 .footer__logo {
@@ -76,12 +76,11 @@
     width: 110px;
     height: 35px;
   }
-}
 
-.footer__logo img {
-  height: revert-layer;
+  img {
+    height: revert-layer;
+  }
 }
-
 
 .footer__navigation {
   display: flex;
@@ -110,51 +109,51 @@
   line-height: 22px;
 
   &:focus-within {
-    & a::before {
-      display: none;
-    }
-  }
-}
-
-.footer__navigation-item a {
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 8px;
-    left: 10px;
-    width: calc(100% - 20px);
-    height: 1px;
-    background-color: $color-default-white;
-    transform: scale(0);
-    transform-origin: center;
-    transition: 0.3s;
-  }
-
-  &:hover:not([disabled]) {
-    &::before {
-      transform: scale(1);
-    }
-  }
-
-  &:focus:not([disabled]) {
-    outline: 1px solid $color-default-white;
-  }
-
-  &:active:not([disabled]) {
-    &::before {
+    a::before {
       display: none;
     }
   }
 
-  &[disabled] {
-    opacity: 0.4;
-    pointer-events: none;
-    cursor: default;
-  }
+  a {
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 8px;
+      left: 10px;
+      width: calc(100% - 20px);
+      height: 1px;
+      background-color: $color-default-white;
+      transform: scale(0);
+      transform-origin: center;
+      transition: 0.3s;
+    }
 
-  @include vp-767 {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    &:hover:not([disabled]) {
+      &::before {
+        transform: scale(1);
+      }
+    }
+
+    &:focus:not([disabled]) {
+      outline: 1px solid $color-default-white;
+    }
+
+    &:active:not([disabled]) {
+      &::before {
+        display: none;
+      }
+    }
+
+    &[disabled] {
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @include vp-767 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
   }
 }
 
@@ -223,14 +222,14 @@
       }
     }
   }
-}
 
-.footer__social-link svg {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 14px;
-  top: 6px;
-  left: 6px;
-  color: $color-black-russian;
+  svg {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: 6px;
+    color: $color-black-russian;
+  }
 }

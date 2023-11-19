@@ -15,7 +15,7 @@
     border-image-slice: 1;
     padding-bottom: 58px;
 
-    & .btn--price:not([disabled]) {
+    .btn--price:not([disabled]) {
       color: $color-default-white;
       background: $gradient-button $color-resolution-blue;
       border: none;
@@ -24,7 +24,7 @@
       padding-bottom: 27px;
     }
 
-    & .price-item__price {
+    .price-item__price {
       margin-bottom: 35px;
     }
   }
@@ -39,11 +39,11 @@
       padding-top: 60px;
       padding-bottom: 58px;
 
-      & .price-item__price {
+      .price-item__price {
         margin-bottom: 24px;
       }
 
-      & .btn--price:not([disabled]) {
+      .btn--price:not([disabled]) {
         padding-top: 22px;
         padding-bottom: 22px;
       }
@@ -83,7 +83,7 @@
       padding-top: 45px;
       padding-bottom: 43px;
 
-      & .price-item__price {
+      .price-item__price {
         margin-bottom: 23px;
       }
     }

@@ -7,51 +7,79 @@
 .accordion__element {
   border-top: 1px solid $color-resolution-blue-20;
 
-  &:first-child .accordion__wrapper {
-    padding-bottom: 22px;
+  &:first-child {
+    .accordion__wrapper {
+      padding-bottom: 22px;
+    }
   }
 
   @include vp-1365 {
-    &:first-child .accordion__wrapper {
-      padding-bottom: 24px;
+    &:first-child {
+      .accordion__wrapper {
+        padding-bottom: 24px;
+      }
     }
 
-    &:last-child .accordion__container {
-      padding-top: 26px;
-      padding-bottom: 23px;
-    }
+    &:last-child {
+      .accordion__container {
+        padding-top: 26px;
+        padding-bottom: 23px;
+      }
 
-    &:last-child .accordion__button {
-      top: 27px;
+      .accordion__button {
+        top: 27px;
+      }
     }
   }
 
   @include vp-767 {
-    &:first-child .accordion__container {
-      padding-bottom: 20px;
+    &:first-child {
+      .accordion__container {
+        padding-bottom: 20px;
+      }
+
+      .accordion__wrapper {
+        padding-bottom: 21px;
+      }
     }
 
-    &:first-child .accordion__wrapper {
-      padding-bottom: 21px;
+    &:nth-child(3) {
+      .accordion__button {
+        top: 36%;
+      }
     }
 
-    &:last-child .accordion__container {
-      padding-top: 22px;
-      padding-bottom: 21px;
-    }
+    &:last-child {
+      .accordion__container {
+        padding-top: 22px;
+        padding-bottom: 21px;
+      }
 
-    &:nth-child(3) .accordion__button {
-      top: 36%;
-    }
-
-    &:last-child .accordion__button {
-      top: 36%;
+      .accordion__button {
+        top: 36%;
+      }
     }
   }
 }
 
 .accordion__element.is-active {
   margin-bottom: 2px;
+
+  .accordion__container {
+    padding-bottom: 12px;
+  }
+
+  .accordion__button {
+    background-color: $color-resolution-blue;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 
   @include vp-1365 {
     margin-bottom: 0;
@@ -68,30 +96,16 @@
   }
 }
 
-.accordion__element.is-active .accordion__container {
-  padding-bottom: 12px;
-}
+.accordion__elementv.is-disabled {
+  .accordion__button {
+    border: 1px solid $color-sapphire-30;
+    pointer-events: none;
+    cursor: default;
 
-.accordion__element.is-active .accordion__button {
-  background-color: $color-resolution-blue;
-
-  &::before {
-    background-color: $color-default-white;
-  }
-
-  &::after {
-    display: none;
-  }
-}
-
-.accordion__elementv.is-disabled .accordion__button {
-  border: 1px solid $color-sapphire-30;
-  pointer-events: none;
-  cursor: default;
-
-  &::before,
-  &::after {
-    opacity: 0.3;
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -104,6 +118,24 @@
   background-color: $color-transparent;
   max-width: 100%;
 
+  p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: none;
+
+    @include vp-1365 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
   @include vp-1365 {
     padding-top: 35px;
   }
@@ -111,24 +143,6 @@
   @include vp-767 {
     padding-top: 22px;
     padding-bottom: 21px;
-  }
-}
-
-.accordion__container p {
-  margin: 0;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: left;
-  text-transform: none;
-
-  @include vp-1365 {
-    font-size: 22px;
-    line-height: 22px;
-  }
-
-  @include vp-767 {
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
@@ -156,24 +170,24 @@
   padding: 0 0 25px;
   max-width: 660px;
 
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
   @include vp-1365 {
     max-width: 550px;
   }
 
   @include vp-767 {
     max-width: 275px;
-  }
-}
-
-.accordion__wrapper p {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 0;
-
-  @include vp-767 {
-    font-size: 16px;
-    line-height: 20px;
   }
 }
 

@@ -14,7 +14,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 46px 0;
+  margin: 0 0 46px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -168,7 +168,7 @@
     border-radius: 50%;
     background-color: $color-sapphire;
 
-    & svg {
+    svg {
       color: $color-default-white;
     }
   }
@@ -183,7 +183,7 @@
     top: 53.8%;
     left: -16px;
 
-    & svg {
+    svg {
       left: 25px;
       top: -7px;
     }
@@ -194,7 +194,7 @@
     right: -18px;
     transform: rotate(180deg);
 
-    & svg {
+    svg {
       right: 11px;
       top: -7px;
     }
@@ -220,7 +220,7 @@
       left: -6px;
       top: 53.3%;
 
-      & svg {
+      svg {
         left: 14px;
         top: 2px;
       }
@@ -230,7 +230,7 @@
       right: -6px;
       top: 53.3%;
 
-      & svg {
+      svg {
         right: 6px;
         top: 0;
       }
@@ -244,7 +244,7 @@
     &:not([disabled]):active {
       background-color: $color-transparent;
 
-      & svg {
+      svg {
         color: $color-sapphire;
       }
     }
