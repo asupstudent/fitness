@@ -3705,47 +3705,6 @@ button,
   color: #030a1a;
 }
 
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
-
 @media (max-width: 1365px) {
   .container {
     padding: 0 45px;
