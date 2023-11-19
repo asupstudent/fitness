@@ -55,17 +55,6 @@ const optimizePng = () =>
             })]))
       .pipe(gulp.dest('build/img'));
 
-/*
-  Optional tasks
-  ---------------------------------
-
-  Используйте отличное от дефолтного значение root, если нужно обработать отдельную папку в img,
-  а не все изображения в img во всех папках.
-
-  root = '' - по дефолту webp добавляются и обновляются во всех папках в source/img/
-  root = 'content/' - webp добавляются и обновляются только в source/img/content/
-*/
-
 const createWebp = () => {
   const root = 'content/';
   return gulp
