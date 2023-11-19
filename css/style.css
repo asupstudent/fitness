@@ -2860,7 +2860,7 @@ button,
 }
 
 .promo__item--primary h3 {
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
@@ -2912,7 +2912,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 211px;
-  padding: 23px 28px 23px;
+  padding: 23px 28px;
   border: 7px solid;
   -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
@@ -2921,7 +2921,7 @@ button,
 }
 
 .promo__item--secondary h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
