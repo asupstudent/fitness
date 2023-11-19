@@ -4,7 +4,7 @@
 
 .faq__wrapper {
   max-width: 1160px;
-  padding: 120px 0 120px;
+  padding: 120px 0;
   margin: 0 auto;
 
   @include vp-1365 {
@@ -17,7 +17,7 @@
 }
 
 .faq__title {
-  margin: 0 0 51px 0;
+  margin: 0 0 51px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -71,12 +71,12 @@
     gap: 8px;
   }
 
-  @media (max-width: 450px) {
+  @include vp-449 {
     grid-template-columns: repeat(2, 141px);
     justify-content: center;
   }
 
-  @media (max-width: 319px) {
+  @include vp-318 {
     grid-template-columns: 1fr;
   }
 }
@@ -95,50 +95,50 @@
     border-color: $color-sapphire;
   }
 
-  &.is-active {
-    color: $color-default-white;
-    background: $gradient-button $color-resolution-blue;
-    padding: 20px 18px 16px;
-    border: none;
-  }
-
-  &.is-disabled {
-    color: $color-link-water;
-    border-color: $color-sapphire-20;
-    pointer-events: none;
-    cursor: default;
-  }
-
   @include vp-1365 {
     width: 100%;
-
-    &.is-active {
-      padding-left: 19px;
-      padding-right: 19px;
-    }
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 16px;
     padding: 15px 18px 11px;
-
-    &.is-active {
-      padding: 16px 18px 12px;
-    }
   }
 
-  @media (max-width: 450px) {
+  @include vp-449 {
     max-width: 141px;
   }
 
-  @media (max-width: 319px) {
+  @include vp-318 {
     max-width: 100%;
   }
 }
 
+.faq__control.is-active {
+  color: $color-default-white;
+  background: $gradient-button $color-resolution-blue;
+  padding: 20px 18px 16px;
+  border: none;
+
+  @include vp-1365 {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @include vp-767 {
+    padding: 16px 18px 12px;
+  }
+}
+
+.faq__control.is-disabled {
+  color: $color-link-water;
+  border-color: $color-sapphire-20;
+  pointer-events: none;
+  cursor: default;
+}
+
 .faq__lists {
-  margin: -1px 0 0 0;
+  margin: -1px 0 0;
   padding: 0;
   list-style: none;
 }

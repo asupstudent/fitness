@@ -21,7 +21,7 @@
 }
 
 .feedback__title {
-  margin: 0 0 33px 0;
+  margin: 0 0 33px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -29,7 +29,7 @@
   letter-spacing: 1.62px;
 
   @include vp-1365 {
-    margin: 0 0 23px 0;
+    margin: 0 0 23px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;

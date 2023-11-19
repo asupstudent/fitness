@@ -93,7 +93,7 @@
 
 .hero__title {
   grid-area: title;
-  padding: 0 0 49px 0;
+  padding: 0 0 49px;
   margin: 0;
   font-family: $ff-alumni-sans;
   font-size: 92px;
@@ -123,7 +123,7 @@
 .hero__services-list {
   grid-area: services-list;
   padding: 0;
-  margin: 13px 0 0 0;
+  margin: 13px 0 0;
   list-style: none;
   font-size: 14px;
   line-height: 22px;
@@ -139,7 +139,7 @@
     line-height: 20px;
   }
 
-  @media (max-width: 400px) {
+  @include vp-399 {
     justify-self: end;
   }
 }

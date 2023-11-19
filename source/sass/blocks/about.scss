@@ -35,7 +35,7 @@
 }
 
 .about__text-block h2 {
-  margin: -5px 0 29px 0;
+  margin: -5px 0 29px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -58,7 +58,7 @@
 }
 
 .about__text-block p {
-  margin: 0 0 94px 0;
+  margin: 0 0 94px;
   font-size: 22px;
   line-height: 22px;
 
@@ -86,15 +86,15 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 786px) {
-    max-width: 505px;
-  }
-
   @include vp-767 {
     margin: 0;
   }
 
-  @media (max-width: 320px) {
+  @include vp-785 {
+    max-width: 505px;
+  }
+
+  @include vp-319 {
     max-width: 279px;
   }
 }
@@ -145,7 +145,7 @@
   background-color: $color-sapphire-20;
 
   @include vp-767 {
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
   }
 }
 
