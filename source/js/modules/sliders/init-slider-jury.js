@@ -2,7 +2,7 @@ const sliderJury = document.querySelector('[data-jury="jury"]');
 const buttonNext = document.querySelector('[data-button="next-jury"]');
 const buttonPrev = document.querySelector('[data-button="prev-jury"]');
 
-const setSliderJury = () => {
+function setSliderJury() {
   return new window.Swiper(sliderJury, {
 
     navigation: {
@@ -31,12 +31,12 @@ const setSliderJury = () => {
       },
     },
   });
-};
+}
 
-const initSliderJury = () => {
+function initSliderJury() {
   if (document.body.contains(sliderJury)) {
     setSliderJury();
   }
-};
+}
 
 export {initSliderJury};
