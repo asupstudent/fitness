@@ -16,7 +16,20 @@
 ### Вся разработка ведётся в директории `source`
 ### Итоговый код попадает в директорию `build`
 
-ПРОВЕРКА:<br>
-<img src="https://github.com/asupstudent/fitness/workflows/project-check/badge.svg?branch=main"><br>
-ДЕПЛОЙ:<br>
-<img src="https://github.com/asupstudent/fitness/workflows/deploy-to-github-pages/badge.svg?branch=main"><br>
+Проект занял по дням весь период работы на проекте, по 2-3 часа в день каждый день.
+Время распределял так чтобы не работать как на гредировании по 10 часов в день)))
+
+npm run lint-js
+ругается на tabs.js
+
+C:\Users\admin\VSCodeProjects\fitness-self-test\source\js\modules\tabs\tabs.js
+   14:16  error  'entry' is never reassigned. Use 'const' instead                           prefer-const
+   85:9   error  'height' is never reassigned. Use 'const' instead                          prefer-const
+  152:14  error  'key' is never reassigned. Use 'const' instead                             prefer-const
+  153:22  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  335:41  error  Unexpected string concatenation                                            prefer-template
+  343:39  error  Unexpected string concatenation                                            prefer-template
+
+этот компонент я брал уже готовый с Лиги решений
+
+Спасибо
