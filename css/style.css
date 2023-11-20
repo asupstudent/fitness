@@ -3443,12 +3443,27 @@ button,
   background-color: transparent;
 }
 
+.form input::-webkit-input-placeholder {
+  color: #ffffff;
+  padding-left: 0;
+}
+
 .form input::-moz-placeholder {
   color: #ffffff;
   padding-left: 0;
 }
 
-.form input::-webkit-input-placeholder {
+.form input:-ms-input-placeholder {
+  color: #ffffff;
+  padding-left: 0;
+}
+
+.form input::-ms-input-placeholder {
+  color: #ffffff;
+  padding-left: 0;
+}
+
+.form input::placeholder {
   color: #ffffff;
   padding-left: 0;
 }
