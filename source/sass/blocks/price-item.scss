@@ -9,7 +9,7 @@
   z-index: 5;
 
   &:hover:not(:nth-child(2)),
-  &:focus:not(:nth-child(2)),
+  &:focus-within:not(:nth-child(2)),
   &.is-active {
     border-image: $gradient-border-tickets-promo;
     border-image-slice: 1;
@@ -34,7 +34,7 @@
     padding-top: 60px;
 
     &:hover:not(:nth-child(2)),
-    &:focus:not(:nth-child(2)),
+    &:focus-within:not(:nth-child(2)),
     &.is-active {
       padding-top: 60px;
       padding-bottom: 58px;
@@ -48,28 +48,6 @@
         padding-bottom: 22px;
       }
     }
-
-    &--full {
-      padding: 58px 20px;
-
-      &:hover:not(:nth-child(2)),
-      &:focus:not(:nth-child(2)),
-      &.is-active {
-        padding-top: 58px;
-      }
-
-      .price-item__title {
-        margin-bottom: 18px;
-      }
-
-      .price-item__description {
-        margin-bottom: 72px;
-
-        @include vp-767 {
-          margin-bottom: 59px;
-        }
-      }
-    }
   }
 
   @include vp-767 {
@@ -78,13 +56,37 @@
     padding-bottom: 43px;
 
     &:hover:not(:nth-child(2)),
-    &:focus:not(:nth-child(2)),
+    &:focus-within:not(:nth-child(2)),
     &.is-active {
       padding-top: 45px;
       padding-bottom: 43px;
 
       .price-item__price {
         margin-bottom: 23px;
+      }
+    }
+  }
+}
+
+.price-item--full {
+  @include vp-1365 {
+    padding: 58px 20px;
+
+    &:hover:not(:nth-child(2)),
+    &:focus-within:not(:nth-child(2)),
+    &.is-active {
+      padding-top: 58px;
+    }
+
+    .price-item__title {
+      margin-bottom: 18px;
+    }
+
+    .price-item__description {
+      margin-bottom: 72px;
+
+      @include vp-767 {
+        margin-bottom: 59px;
       }
     }
   }

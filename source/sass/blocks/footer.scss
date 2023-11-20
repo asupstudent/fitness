@@ -114,7 +114,7 @@
     }
   }
 
-  a {
+  .footer__navigation-link {
     &::before {
       position: absolute;
       content: "";
@@ -144,16 +144,18 @@
       }
     }
 
-    &[disabled] {
-      opacity: 0.4;
-      pointer-events: none;
-      cursor: default;
-    }
-
     @include vp-767 {
       padding-top: 8px;
       padding-bottom: 8px;
     }
+  }
+}
+
+.footer__navigation-link {
+  &[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
   }
 }
 

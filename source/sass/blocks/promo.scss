@@ -112,7 +112,7 @@
       }
     }
 
-    a {
+    .promo__item-link {
       color: inherit;
 
       &::after {
@@ -186,7 +186,7 @@
       }
     }
 
-    a {
+    .promo__item-link {
       color: $color-resolution-blue;
 
       &::after {
