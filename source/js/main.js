@@ -4,7 +4,6 @@ import {initTabs} from './modules/tabs/init-tabs';
 import {initSliderJury} from './modules/sliders/init-slider-jury';
 import {initSliderReviews} from './modules/sliders/init-slider-reviews';
 import {initAccordions} from './modules/accordion/init-accordion';
-import {initClickElementAccordion} from './modules/accordion/init-accordion-click';
 import {Form} from './modules/form-validate/form';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSliderJury();
     initAccordions();
-    initClickElementAccordion();
     initSliderReviews();
     const form = new Form();
     window.form = form;

@@ -32,4 +32,6 @@ C:\Users\admin\VSCodeProjects\fitness-self-test\source\js\modules\tabs\tabs.js
 
 этот компонент я брал уже готовый с Лиги решений
 
+НЕ УСПЕЛ РЕАЛИЗОВАТЬ ОТКРЫТИЕ АККОРДЕОНА ПО КЛИКУ НА ЭЛЕМЕНТЕ
+
 Спасибо
