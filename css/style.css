@@ -1587,16 +1587,11 @@ button,
   cursor: default;
 }
 
-.btn--hero {
-  outline: none;
-}
-
 .btn--price {
   padding: 25px;
   border: 2px solid #102654;
   color: #102654;
   width: 100%;
-  outline: none;
 }
 
 .btn--price:active:not([disabled]) {
@@ -1615,7 +1610,6 @@ button,
   font-size: 12px;
   letter-spacing: 0.6px;
   line-height: 12px;
-  outline: none;
 }
 
 .btn--form {
@@ -1624,7 +1618,6 @@ button,
   color: #ffffff;
   border: 2px solid #ffffff;
   background-color: transparent;
-  outline: none;
 }
 
 .custom-input {
@@ -1724,7 +1717,6 @@ button,
   font-size: 26px;
   line-height: 26px;
   color: #ffffff;
-  outline: none;
 }
 
 .main-nav__contacts-link::before {
@@ -3147,7 +3139,6 @@ button,
   border-radius: 50%;
   top: 25px;
   right: 1px;
-  outline: none;
 }
 
 .accordion__button::before {
