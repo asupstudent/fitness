@@ -2,7 +2,7 @@ const sliderReviews = document.querySelector('[data-reviews="reviews"]');
 const buttonNext = document.querySelector('[data-button="next-reviews"]');
 const buttonPrev = document.querySelector('[data-button="prev-reviews"]');
 
-function setSliderReviews() {
+const setSliderReviews = () => {
   return new window.Swiper(sliderReviews, {
 
     navigation: {
@@ -13,12 +13,12 @@ function setSliderReviews() {
     slidesPerView: 1,
     spaceBetween: 30,
   });
-}
+};
 
-function initSliderReviews() {
+const initSliderReviews = () => {
   if (document.body.contains(sliderReviews)) {
     setSliderReviews();
   }
-}
+};
 
 export {initSliderReviews};
